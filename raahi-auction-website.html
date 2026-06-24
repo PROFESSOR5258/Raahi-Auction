@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Raahi Auction Services India Pvt. Ltd. – Gujarat's most trusted bank auction property platform. Find verified bank auction properties in Ahmedabad, flats, plots, commercial, vehicles and more.">
+<title>Raahi Auction Services – Bank Auction Properties in Ahmedabad, Gujarat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --red: #C0272D;
+    --red-dark: #8B1A1E;
+    --red-light: #F9ECEC;
+    --red-mid: #E04048;
+    --gold: #C89B2C;
+    --gold-light: #FDF5E4;
+    --text: #1A1A1A;
+    --text-muted: #5A5A5A;
+    --text-light: #888;
+    --border: #E5E0E0;
+    --bg: #FAFAF9;
+    --white: #fff;
+    --shadow: 0 2px 12px rgba(0,0,0,0.07);
+    --radius: 10px;
+    --nav-h: 70px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  a { text-decoration: none; color: inherit; }
+  img { display: block; max-width: 100%; }
+  ul { list-style: none; }
+
+  /* ── NAV ── */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    height: var(--nav-h);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    gap: 40px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  }
+  .nav-logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+  .nav-logo-icon {
+    width: 42px; height: 42px;
+    background: var(--red);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 18px; color: white; letter-spacing: -1px;
+  }
+  .nav-logo-text { line-height: 1.1; }
+  .nav-logo-text strong { font-size: 17px; font-weight: 700; color: var(--red); display: block; }
+  .nav-logo-text span { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.6px; }
+
+  .nav-links { display: flex; gap: 28px; flex: 1; }
+  .nav-links a {
+    font-size: 13.5px; font-weight: 500; color: var(--text-muted);
+    transition: color 0.15s;
+    white-space: nowrap;
+  }
+  .nav-links a:hover { color: var(--red); }
+  .nav-links a.active { color: var(--red); border-bottom: 2px solid var(--red); padding-bottom: 2px; }
+
+  .nav-cta { display: flex; gap: 10px; flex-shrink: 0; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 8px 20px; border-radius: 7px; font-size: 13.5px; font-weight: 600;
+    cursor: pointer; transition: all 0.15s; border: none;
+    white-space: nowrap;
+  }
+  .btn-outline {
+    background: transparent; border: 1.5px solid var(--red); color: var(--red);
+  }
+  .btn-outline:hover { background: var(--red-light); }
+  .btn-solid {
+    background: var(--red); color: white;
+  }
+  .btn-solid:hover { background: var(--red-dark); }
+  .btn-gold {
+    background: var(--gold); color: white;
+  }
+  .btn-gold:hover { background: #a07e20; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #1A0507 0%, #3D0D10 45%, #C0272D 100%);
+    color: white;
+    padding: 72px 40px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0, rgba(255,255,255,0.015) 1px, transparent 0, transparent 50%);
+    background-size: 24px 24px;
+  }
+  .hero-inner { max-width: 980px; margin: 0 auto; position: relative; z-index: 1; }
+  .hero-eyebrow {
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 12px; letter-spacing: 0.8px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 16px;
+    max-width: 700px;
+  }
+  .hero h1 em { color: #FAC775; font-style: normal; }
+  .hero p {
+    font-size: 16px; color: rgba(255,255,255,0.75);
+    max-width: 520px; margin-bottom: 32px; line-height: 1.7;
+  }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 52px; }
+  .hero-stats {
+    display: flex; gap: 40px; flex-wrap: wrap;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 32px;
+  }
+  .hero-stat strong { display: block; font-size: 28px; font-weight: 700; color: #FAC775; }
+  .hero-stat span { font-size: 12.5px; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* ── SEARCH BAR ── */
+  .search-wrap {
+    background: white;
+    border-bottom: 1px solid var(--border);
+    padding: 22px 40px;
+  }
+  .search-inner { max-width: 980px; margin: 0 auto; }
+  .search-bar {
+    display: flex; gap: 10px; align-items: center;
+    background: #F5F3F3;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 6px 6px 6px 16px;
+    transition: border-color 0.15s;
+  }
+  .search-bar:focus-within { border-color: var(--red); }
+  .search-bar svg { flex-shrink: 0; color: var(--text-muted); width: 18px; height: 18px; }
+  .search-bar input {
+    flex: 1; border: none; background: transparent;
+    font-size: 14.5px; font-family: 'Inter', sans-serif;
+    color: var(--text); outline: none;
+  }
+  .search-bar input::placeholder { color: var(--text-light); }
+  .search-filters { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .filter-chip {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 5px 13px; border-radius: 20px; font-size: 12.5px;
+    font-weight: 500; cursor: pointer; border: 1.5px solid var(--border);
+    background: white; color: var(--text-muted); transition: all 0.12s;
+  }
+  .filter-chip:hover, .filter-chip.active {
+    background: var(--red-light); border-color: var(--red); color: var(--red);
+  }
+
+  /* ── SECTION ── */
+  .section { padding: 60px 40px; }
+  .section-inner { max-width: 980px; margin: 0 auto; }
+  .section-header { margin-bottom: 36px; }
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 700; margin-bottom: 6px;
+  }
+  .section-header p { color: var(--text-muted); font-size: 14.5px; }
+  .section-header-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
+
+  /* ── PROPERTY GRID ── */
+  .prop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 22px;
+  }
+  .prop-card {
+    background: white;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: box-shadow 0.18s, transform 0.18s;
+    cursor: pointer;
+  }
+  .prop-card:hover { box-shadow: 0 8px 28px rgba(192,39,45,0.12); transform: translateY(-3px); }
+  .prop-img {
+    width: 100%; height: 180px;
+    object-fit: cover;
+    background: #f0ecec;
+    display: block;
+    position: relative;
+  }
+  .prop-img-wrap { position: relative; }
+  .prop-badge {
+    position: absolute; top: 10px; left: 10px;
+    background: var(--red); color: white;
+    font-size: 11px; font-weight: 600;
+    padding: 3px 9px; border-radius: 5px;
+    text-transform: uppercase; letter-spacing: 0.4px;
+  }
+  .prop-badge.upcoming { background: var(--gold); }
+  .prop-badge.sold { background: #444; }
+  .prop-fav {
+    position: absolute; top: 10px; right: 10px;
+    width: 30px; height: 30px; border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; cursor: pointer; transition: transform 0.12s;
+  }
+  .prop-fav:hover { transform: scale(1.15); }
+  .prop-body { padding: 16px; }
+  .prop-type { font-size: 11.5px; font-weight: 600; color: var(--red); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .prop-title { font-size: 14.5px; font-weight: 600; margin-bottom: 4px; line-height: 1.4; }
+  .prop-loc { font-size: 12.5px; color: var(--text-muted); margin-bottom: 12px; display: flex; align-items: center; gap: 4px; }
+  .prop-divider { height: 1px; background: var(--border); margin-bottom: 12px; }
+  .prop-meta { display: flex; justify-content: space-between; align-items: flex-end; }
+  .prop-price-label { font-size: 11px; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.4px; }
+  .prop-price { font-size: 17px; font-weight: 700; color: var(--red); }
+  .prop-date { text-align: right; }
+  .prop-date-label { font-size: 11px; color: var(--text-light); }
+  .prop-date-val { font-size: 12.5px; font-weight: 600; color: var(--text-muted); }
+  .prop-bank {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 11.5px; color: var(--text-muted);
+    background: #F5F3F3; padding: 3px 9px; border-radius: 5px;
+    margin-top: 10px; width: fit-content;
+  }
+  .prop-bank span { font-weight: 600; }
+
+  /* placeholder image colors per type */
+  .img-flat { background: linear-gradient(135deg, #fde8e8 0%, #fac1c1 100%); }
+  .img-plot { background: linear-gradient(135deg, #e8f5e9 0%, #a5d6a7 100%); }
+  .img-commercial { background: linear-gradient(135deg, #e3f2fd 0%, #90caf9 100%); }
+  .img-vehicle { background: linear-gradient(135deg, #fff8e1 0%, #ffe082 100%); }
+  .img-land { background: linear-gradient(135deg, #f3e5f5 0%, #ce93d8 100%); }
+  .img-house { background: linear-gradient(135deg, #fbe9e7 0%, #ffab91 100%); }
+  .img-placeholder {
+    width: 100%; height: 180px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 40px;
+  }
+
+  /* ── CATEGORY PILLS ── */
+  .cat-grid {
+    display: flex; gap: 12px; flex-wrap: wrap;
+  }
+  .cat-card {
+    flex: 1; min-width: 120px;
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .cat-card:hover {
+    border-color: var(--red);
+    background: var(--red-light);
+  }
+  .cat-icon { font-size: 28px; margin-bottom: 8px; }
+  .cat-label { font-size: 13px; font-weight: 600; color: var(--text); }
+  .cat-count { font-size: 11.5px; color: var(--text-muted); margin-top: 2px; }
+
+  /* ── STATS STRIP ── */
+  .stats-strip {
+    background: var(--red);
+    color: white;
+    padding: 40px;
+  }
+  .stats-strip-inner {
+    max-width: 980px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 24px; text-align: center;
+  }
+  .strip-stat strong { display: block; font-size: 32px; font-weight: 700; }
+  .strip-stat span { font-size: 13px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* ── HOW IT WORKS ── */
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+  .step-card {
+    background: white; border-radius: var(--radius);
+    border: 1px solid var(--border); padding: 28px 22px; text-align: center;
+  }
+  .step-num {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--red-light); color: var(--red);
+    font-size: 18px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+  }
+  .step-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+  .step-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; }
+
+  /* ── SERVICES ── */
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+  .svc-card {
+    background: white; border-radius: var(--radius);
+    border: 1px solid var(--border); padding: 26px 22px;
+    transition: box-shadow 0.15s;
+  }
+  .svc-card:hover { box-shadow: var(--shadow); }
+  .svc-icon {
+    width: 46px; height: 46px; border-radius: 10px;
+    background: var(--red-light); display: flex; align-items: center;
+    justify-content: center; font-size: 22px; margin-bottom: 16px;
+  }
+  .svc-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+  .svc-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.65; }
+
+  /* ── BANKS STRIP ── */
+  .banks-strip { background: white; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .banks-inner {
+    max-width: 980px; margin: 0 auto; padding: 28px 40px;
+    display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
+  }
+  .banks-label { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.6px; white-space: nowrap; }
+  .bank-badges { display: flex; gap: 10px; flex-wrap: wrap; }
+  .bank-badge {
+    background: #F5F3F3; border: 1px solid var(--border);
+    border-radius: 6px; padding: 6px 14px;
+    font-size: 12.5px; font-weight: 600; color: var(--text-muted);
+  }
+
+  /* ── TESTIMONIALS ── */
+  .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .testi-card {
+    background: white; border-radius: var(--radius);
+    border: 1px solid var(--border); padding: 24px 22px;
+  }
+  .stars { color: var(--gold); font-size: 14px; margin-bottom: 10px; }
+  .testi-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px; font-style: italic; }
+  .testi-author { display: flex; align-items: center; gap: 10px; }
+  .testi-avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--red-light); color: var(--red);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700;
+  }
+  .testi-name { font-size: 13.5px; font-weight: 600; }
+  .testi-loc { font-size: 12px; color: var(--text-muted); }
+
+  /* ── CTA BANNER ── */
+  .cta-banner {
+    background: linear-gradient(135deg, #1A0507, #3D0D10);
+    color: white; text-align: center; padding: 72px 40px;
+  }
+  .cta-banner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 4vw, 38px);
+    font-weight: 700; margin-bottom: 12px;
+  }
+  .cta-banner p { font-size: 15px; color: rgba(255,255,255,0.7); margin-bottom: 28px; max-width: 480px; margin-left: auto; margin-right: auto; }
+  .cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+  /* ── CONTACT ── */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  @media (max-width: 680px) { .contact-grid { grid-template-columns: 1fr; } }
+  .contact-info h3 { font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+  .contact-row {
+    display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px;
+  }
+  .contact-ic {
+    width: 38px; height: 38px; border-radius: 8px;
+    background: var(--red-light); color: var(--red);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px; flex-shrink: 0;
+  }
+  .contact-row strong { display: block; font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+  .contact-row span { font-size: 13.5px; color: var(--text-muted); }
+  .contact-form { background: white; border-radius: var(--radius); border: 1px solid var(--border); padding: 28px; }
+  .contact-form h3 { font-size: 17px; font-weight: 700; margin-bottom: 20px; }
+  .form-group { margin-bottom: 14px; }
+  .form-group label { display: block; font-size: 12.5px; font-weight: 600; margin-bottom: 6px; color: var(--text-muted); }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 9px 12px;
+    border: 1.5px solid var(--border); border-radius: 7px;
+    font-size: 14px; font-family: 'Inter', sans-serif; color: var(--text);
+    background: #FAFAF9; outline: none; transition: border-color 0.15s;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--red); }
+  .form-group textarea { resize: vertical; min-height: 90px; }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: #1A0507; color: rgba(255,255,255,0.7);
+    padding: 56px 40px 28px;
+  }
+  .footer-grid {
+    max-width: 980px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px; padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+  .footer-brand { }
+  .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .footer-logo-icon {
+    width: 38px; height: 38px; background: var(--red);
+    border-radius: 7px; display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 16px; color: white; letter-spacing: -1px;
+  }
+  .footer-logo strong { font-size: 16px; font-weight: 700; color: white; }
+  .footer-brand p { font-size: 13px; line-height: 1.7; max-width: 280px; }
+  .footer-col h4 { color: white; font-size: 13.5px; font-weight: 700; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .footer-col a { display: block; font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 9px; transition: color 0.12s; }
+  .footer-col a:hover { color: white; }
+  .footer-bottom {
+    max-width: 980px; margin: 24px auto 0;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 12.5px; flex-wrap: wrap; gap: 10px;
+  }
+  .footer-socials { display: flex; gap: 12px; }
+  .social-ic {
+    width: 32px; height: 32px; border-radius: 6px;
+    background: rgba(255,255,255,0.08);
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,0.7); font-size: 14px;
+    transition: background 0.15s; cursor: pointer;
+  }
+  .social-ic:hover { background: var(--red); color: white; }
+
+  /* ── PAGINATION ── */
+  .pagination { display: flex; gap: 6px; justify-content: center; margin-top: 36px; flex-wrap: wrap; }
+  .page-btn {
+    width: 36px; height: 36px; border-radius: 7px;
+    border: 1.5px solid var(--border); background: white;
+    font-size: 13.5px; font-weight: 500; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.12s; color: var(--text-muted);
+  }
+  .page-btn:hover { border-color: var(--red); color: var(--red); }
+  .page-btn.active { background: var(--red); border-color: var(--red); color: white; }
+
+  /* ── ANNOUNCEMENT STRIP ── */
+  .announce {
+    background: var(--gold); color: white;
+    padding: 10px 40px;
+    text-align: center; font-size: 13px; font-weight: 500;
+  }
+  .announce a { color: white; text-decoration: underline; font-weight: 600; }
+
+  /* ── MOBILE ── */
+  @media (max-width: 640px) {
+    .nav { padding: 0 16px; gap: 16px; }
+    .nav-links { display: none; }
+    .section { padding: 44px 20px; }
+    .hero { padding: 48px 20px 56px; }
+    .search-wrap { padding: 16px 20px; }
+    .hero-stats { gap: 24px; }
+    .stats-strip { padding: 32px 20px; }
+    .banks-inner { padding: 20px; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer { padding: 40px 20px 20px; }
+    .announce { padding: 10px 20px; }
+  }
+
+  /* Tag */
+  .tag {
+    display: inline-flex; align-items: center;
+    padding: 3px 10px; border-radius: 20px; font-size: 11.5px; font-weight: 600;
+    background: var(--red-light); color: var(--red);
+  }
+  .tag.gold { background: var(--gold-light); color: #9a7616; }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 13px; color: var(--text-muted);
+    padding: 14px 40px;
+    max-width: calc(980px + 80px); margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+  .breadcrumb a:hover { color: var(--red); }
+  .breadcrumb-sep { color: var(--border); }
+
+  /* Alert box */
+  .info-box {
+    background: #FDF5E4; border: 1.5px solid #F0C85A;
+    border-radius: var(--radius); padding: 14px 18px;
+    font-size: 13.5px; color: #7A5C10; margin-bottom: 24px;
+    display: flex; gap: 10px; align-items: flex-start;
+  }
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT STRIP -->
+<div class="announce">
+  🏛️ New bank auction listings added daily — <a href="#listings">Browse latest properties in Ahmedabad</a>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo">
+    <div class="nav-logo-icon">RA</div>
+    <div class="nav-logo-text">
+      <strong>RAAHI AUCTION</strong>
+      <span>Services India Pvt. Ltd.</span>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#" class="active">Home</a>
+    <a href="#listings">Listings</a>
+    <a href="#services">Services</a>
+    <a href="#how">How It Works</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-cta">
+    <a href="#contact" class="btn btn-outline">Login</a>
+    <a href="#contact" class="btn btn-solid">Register Free</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Gujarat's Most Trusted Auction Services Platform</div>
+    <h1>Find <em>Bank Auction</em> Properties in Ahmedabad &amp; Gujarat</h1>
+    <p>Verified listings of bank-seized properties — flats, plots, commercial spaces, vehicles and more — at below-market reserve prices. Trusted by buyers and banks since 2018.</p>
+    <div class="hero-actions">
+      <a href="#listings" class="btn btn-gold" style="padding:12px 28px; font-size:15px;">Browse Auctions</a>
+      <a href="#contact" class="btn btn-outline" style="padding:12px 28px; font-size:15px; border-color:rgba(255,255,255,0.4); color:white;">Talk to an Expert</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>8+</strong><span>Years in Operation</span></div>
+      <div class="hero-stat"><strong>2,400+</strong><span>Active Listings</span></div>
+      <div class="hero-stat"><strong>40+</strong><span>Bank Partners</span></div>
+      <div class="hero-stat"><strong>4.8★</strong><span>Client Rating</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH BAR -->
+<div class="search-wrap">
+  <div class="search-inner">
+    <div class="search-bar">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="text" placeholder="Search by area, property type, bank or auction ID…">
+      <a href="#listings" class="btn btn-solid" style="padding:8px 22px;">Search</a>
+    </div>
+    <div class="search-filters">
+      <button class="filter-chip active">All Types</button>
+      <button class="filter-chip">Residential</button>
+      <button class="filter-chip">Commercial</button>
+      <button class="filter-chip">Plots &amp; Land</button>
+      <button class="filter-chip">Vehicles</button>
+      <button class="filter-chip">Industrial</button>
+      <button class="filter-chip">Upcoming Only</button>
+    </div>
+  </div>
+</div>
+
+<!-- BANKS STRIP -->
+<div class="banks-strip">
+  <div class="banks-inner">
+    <div class="banks-label">Partner Banks</div>
+    <div class="bank-badges">
+      <span class="bank-badge">SBI</span>
+      <span class="bank-badge">HDFC Bank</span>
+      <span class="bank-badge">ICICI Bank</span>
+      <span class="bank-badge">Bank of Baroda</span>
+      <span class="bank-badge">PNB</span>
+      <span class="bank-badge">Union Bank</span>
+      <span class="bank-badge">Axis Bank</span>
+      <span class="bank-badge">DCB Bank</span>
+      <span class="bank-badge">Canara Bank</span>
+      <span class="bank-badge">+ 30 more</span>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<section class="section" style="background: white; border-bottom: 1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>Browse by Category</h2>
+      <p>Find the right asset type for your investment</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-icon">🏠</div>
+        <div class="cat-label">Residential Flat</div>
+        <div class="cat-count">840+ listings</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🏗️</div>
+        <div class="cat-label">Plot / Land</div>
+        <div class="cat-count">610+ listings</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🏢</div>
+        <div class="cat-label">Commercial</div>
+        <div class="cat-count">290+ listings</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🚗</div>
+        <div class="cat-label">Vehicles</div>
+        <div class="cat-count">180+ listings</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🏭</div>
+        <div class="cat-label">Industrial</div>
+        <div class="cat-count">95+ listings</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🏘️</div>
+        <div class="cat-label">Bungalow / House</div>
+        <div class="cat-count">210+ listings</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LISTINGS -->
+<section class="section" id="listings">
+  <div class="section-inner">
+    <div class="section-header-row section-header">
+      <div>
+        <h2>Bank Auction Properties in Ahmedabad</h2>
+        <p>2,198 verified listings · Updated daily from official bank notices</p>
+      </div>
+      <a href="#listings" class="btn btn-outline" style="white-space:nowrap;">View All Listings</a>
+    </div>
+
+    <div class="info-box">
+      ℹ️ <span>All listed properties are sourced from official bank e-auction portals and DRT notices. Reserve prices shown are indicative. Contact us for full auction documents.</span>
+    </div>
+
+    <div class="prop-grid">
+
+      <!-- Card 1 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <div class="img-flat img-placeholder">🏠</div>
+          <div class="prop-badge">Bank Auction</div>
+          <div class="prop-fav">♡</div>
+        </div>
+        <div class="prop-body">
+          <div class="prop-type">Residential Flat</div>
+          <div class="prop-title">2 BHK Flat – Safal Sameep, South Bopal</div>
+          <div class="prop-loc">📍 South Bopal, Ahmedabad</div>
+          <div class="prop-bank">🏦 <span>SBI</span></div>
+          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-meta">
+            <div>
+              <div class="prop-price-label">Reserve Price</div>
+              <div class="prop-price">₹24,10,000</div>
+            </div>
+            <div class="prop-date">
+              <div class="prop-date-label">Auction Date</div>
+              <div class="prop-date-val">07 Aug 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <div class="img-commercial img-placeholder">🏢</div>
+          <div class="prop-badge upcoming">Upcoming</div>
+          <div class="prop-fav">♡</div>
+        </div>
+        <div class="prop-body">
+          <div class="prop-type">Commercial Shop</div>
+          <div class="prop-title">Ground Floor Shop – B-04, Vastrapur</div>
+          <div class="prop-loc">📍 Vastrapur, Ahmedabad</div>
+          <div class="prop-bank">🏦 <span>DCB Bank</span></div>
+          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-meta">
+            <div>
+              <div class="prop-price-label">Reserve Price</div>
+              <div class="prop-price">₹14,12,000</div>
+            </div>
+            <div class="prop-date">
+              <div class="prop-date-label">Auction Date</div>
+              <div class="prop-date-val">Upcoming</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <div class="img-plot img-placeholder">🌿</div>
+          <div class="prop-badge">Bank Auction</div>
+          <div class="prop-fav">♡</div>
+        </div>
+        <div class="prop-body">
+          <div class="prop-type">Residential Plot</div>
+          <div class="prop-title">Freehold Plot – Valva, Ahmedabad District</div>
+          <div class="prop-loc">📍 Valva, Ahmedabad</div>
+          <div class="prop-bank">🏦 <span>Bank of Baroda</span></div>
+          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-meta">
+            <div>
+              <div class="prop-price-label">Reserve Price</div>
+              <div class="prop-price">₹4,75,000</div>
+            </div>
+            <div class="prop-date">
+              <div class="prop-date-label">Auction Date</div>
+              <div class="prop-date-val">06 Aug 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <div class="img-flat img-placeholder">🏘️</div>
+          <div class="prop-badge">Bank Auction</div>
+          <div class="prop-fav">♡</div>
+        </div>
+        <div class="prop-body">
+          <div class="prop-type">Residential Flat</div>
+          <div class="prop-title">Flat No. A-502 – Saundarya Residency, Chandkheda</div>
+          <div class="prop-loc">📍 Chandkheda, Ahmedabad</div>
+          <div class="prop-bank">🏦 <span>HDFC Bank</span></div>
+          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-meta">
+            <div>
+              <div class="prop-price-label">Reserve Price</div>
+              <div class="prop-price">₹25,55,000</div>
+            </div>
+            <div class="prop-date">
+              <div class="prop-date-label">Auction Date</div>
+              <div class="prop-date-val">04 Aug 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <div class="img-land img-placeholder">🌾</div>
+          <div class="prop-badge">Bank Auction</div>
+          <div class="prop-fav">♡</div>
+        </div>
+        <div class="prop-body">
+          <div class="prop-type">Agricultural Land</div>
+          <div class="prop-title">Revenue Land Parcel – Aslali, Ahmedabad</div>
+          <div class="prop-loc">📍 Aslali, Ahmedabad</div>
+          <div class="prop-bank">🏦 <span>PNB</span></div>
+          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-meta">
+            <div>
+              <div class="prop-price-label">Reserve Price</div>
+              <div class="prop-price">₹4,00,000</div>
+            </div>
+            <div class="prop-date">
+              <div class="prop-date-label">Auction Date</div>
+              <div class="prop-date-val">05 Aug 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <div class="img-house img-placeholder">🏡</div>
+          <div class="prop-badge upcoming">Upcoming</div>
+          <div class="prop-fav">♡</div>
+        </div>
+        <div class="prop-body">
+          <div class="prop-type">Independent House</div>
+          <div class="prop-title">D-101, 1st Floor – Swaminarayan Krupa, Bavla</div>
+          <div class="prop-loc">📍 Bavla, Ahmedabad</div>
+          <div class="prop-bank">🏦 <span>Union Bank</span></div>
+          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-meta">
+            <div>
+              <div class="prop-price-label">Reserve Price</div>
+              <div class="prop-price">₹12,55,500</div>
+            </div>
+            <div class="prop-date">
+              <div class="prop-date-label">Auction Date</div>
+              <div class="prop-date-val">Upcoming</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pagination">
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">4</button>
+      <button class="page-btn">5</button>
+      <button class="page-btn">…</button>
+      <button class="page-btn">183</button>
+      <button class="page-btn" style="width:auto; padding:0 14px;">Next →</button>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stats-strip-inner">
+    <div class="strip-stat"><strong>₹500Cr+</strong><span>Value Disposed</span></div>
+    <div class="strip-stat"><strong>2,400+</strong><span>Properties Listed</span></div>
+    <div class="strip-stat"><strong>40+</strong><span>Banking Partners</span></div>
+    <div class="strip-stat"><strong>10,000+</strong><span>Registered Buyers</span></div>
+    <div class="strip-stat"><strong>8 Years</strong><span>of Trust</span></div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how" style="background: white;">
+  <div class="section-inner">
+    <div class="section-header" style="text-align:center; max-width: 520px; margin: 0 auto 40px;">
+      <h2>How Raahi Auction Works</h2>
+      <p>Buying a bank auction property has never been this simple. We guide you from search to sale.</p>
+    </div>
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Register &amp; Browse</h3>
+        <p>Create a free account and browse verified bank auction listings across Ahmedabad and Gujarat.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Shortlist Properties</h3>
+        <p>Filter by type, price, bank and auction date. Bookmark favourites and get instant alerts.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Due Diligence Support</h3>
+        <p>Our team assists with title verification, encumbrance checks, and document review before you bid.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>Bid &amp; Win</h3>
+        <p>Participate in the bank's e-auction portal with confidence. We assist with EMD submission and paperwork.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services" style="background: var(--bg);">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>Our Services</h2>
+      <p>Comprehensive asset disposal and recovery solutions for banks, institutions and investors</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-icon">🏦</div>
+        <h3>Bank Auction Property Listings</h3>
+        <p>Verified NPA properties from 40+ scheduled banks across Gujarat — residential, commercial, industrial and land.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">📋</div>
+        <h3>Debt Collection &amp; Recovery</h3>
+        <p>SARFAESI-compliant debt recovery and collection management services for banks and financial institutions.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🔑</div>
+        <h3>Asset Disposal Management</h3>
+        <p>End-to-end disposal of movable and immovable assets including vehicles, machinery and property portfolios.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">📊</div>
+        <h3>NPA Portfolio Assignment</h3>
+        <p>Strategic NPA portfolio sourcing, evaluation and assignment to qualified ARC platforms and investor networks.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🛡️</div>
+        <h3>Enforcement Agent Services</h3>
+        <p>Licensed enforcement agents for physical possession, custody and secure storage of seized assets across Gujarat and Maharashtra.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🤝</div>
+        <h3>Buyer Advisory</h3>
+        <p>One-on-one advisory for buyers — title checks, legal guidance, bank negotiation, and post-auction documentation support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" style="background: white;">
+  <div class="section-inner">
+    <div class="section-header" style="text-align:center; max-width: 480px; margin: 0 auto 36px;">
+      <h2>What Our Clients Say</h2>
+      <p>Rated 4.8/5 by over 50 verified clients on Justdial</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Raahi Auction helped me navigate my first bank auction with complete ease. They handled all the paperwork and kept me informed at every step."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RK</div>
+          <div>
+            <div class="testi-name">Rajesh Kharadi</div>
+            <div class="testi-loc">Investor, Ahmedabad</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Professional team with deep knowledge of SARFAESI. They found a buyer for our NPA portfolio within 3 weeks. Excellent service and very transparent."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PM</div>
+          <div>
+            <div class="testi-name">Priya Mehta</div>
+            <div class="testi-loc">Branch Manager, Gandhinagar</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★☆</div>
+        <p>"Got a flat in Chandkheda 18% below market rate through their auction listing. The due diligence support they provided saved me from a major headache."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SA</div>
+          <div>
+            <div class="testi-name">Sanjay Agarwal</div>
+            <div class="testi-loc">First-time Buyer, Surat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about" style="background: var(--bg);">
+  <div class="section-inner">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: center;">
+      <div>
+        <span class="tag" style="margin-bottom: 16px; display: inline-block;">About Raahi Auction</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 3vw, 30px); font-weight: 700; margin-bottom: 16px;">Gujarat's Leading NPA &amp; Bank Auction Specialists</h2>
+        <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 14px; line-height: 1.75;">
+          Raahi Auction Services India Pvt. Ltd. was founded in 2018 in Ahmedabad. We are a professionally managed debt collection and asset disposal agency with 8+ years of hands-on experience in bank auction properties, NPA portfolio management and recovery services across Gujarat and Maharashtra.
+        </p>
+        <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 24px; line-height: 1.75;">
+          Our team of Enforcement Agents, legal advisors and property specialists works closely with 40+ scheduled banks, ARCs, NBFCs and institutional clients to ensure transparent, compliant and efficient asset monetisation.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="#contact" class="btn btn-solid" style="padding: 10px 24px;">Get in Touch</a>
+          <a href="#services" class="btn btn-outline" style="padding: 10px 24px;">Our Services</a>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+        <div style="background: white; border-radius: var(--radius); border: 1px solid var(--border); padding: 22px; text-align: center;">
+          <div style="font-size: 28px; font-weight: 700; color: var(--red);">2018</div>
+          <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Year Established</div>
+        </div>
+        <div style="background: white; border-radius: var(--radius); border: 1px solid var(--border); padding: 22px; text-align: center;">
+          <div style="font-size: 28px; font-weight: 700; color: var(--red);">40+</div>
+          <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Bank Partners</div>
+        </div>
+        <div style="background: var(--red); border-radius: var(--radius); padding: 22px; text-align: center;">
+          <div style="font-size: 28px; font-weight: 700; color: white;">2</div>
+          <div style="font-size: 13px; color: rgba(255,255,255,0.75); margin-top: 4px;">Offices (Ahmedabad &amp; Mumbai)</div>
+        </div>
+        <div style="background: white; border-radius: var(--radius); border: 1px solid var(--border); padding: 22px; text-align: center;">
+          <div style="font-size: 28px; font-weight: 700; color: var(--red);">4.8★</div>
+          <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Client Rating</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>Looking for a Specific Property?</h2>
+  <p>Tell us your requirement and our team will personally match you with the right bank auction opportunities.</p>
+  <div class="cta-actions">
+    <a href="#contact" class="btn btn-gold" style="padding: 13px 30px; font-size: 15px;">Send Your Requirement</a>
+    <a href="tel:+918488848874" class="btn btn-outline" style="padding: 13px 30px; font-size: 15px; border-color: rgba(255,255,255,0.35); color: white;">
+      📞 Call +91 84888 48874
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact" style="background: white;">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>Get in touch with our team in Ahmedabad or Mumbai</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Reach Our Team</h3>
+        <div class="contact-row">
+          <div class="contact-ic">📍</div>
+          <div>
+            <strong>Ahmedabad Office (Head Office)</strong>
+            <span>A/701, 7th Floor, B.G. Tower, Outside Delhi Darwaja Gate, Madhupura, Ahmedabad – 380004, Gujarat</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ic">📍</div>
+          <div>
+            <strong>Mumbai Office</strong>
+            <span>Colaba, Mumbai, Maharashtra</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ic">📞</div>
+          <div>
+            <strong>Phone / WhatsApp</strong>
+            <span>+91 84888 48874 &nbsp;|&nbsp; +91 99983 02771</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ic">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <span>raahiauc@gmail.com &nbsp;|&nbsp; neelesh@raahiauction.com</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ic">🌐</div>
+          <div>
+            <strong>Website</strong>
+            <span>raahiauction.com</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ic">🕐</div>
+          <div>
+            <strong>Office Hours</strong>
+            <span>Monday – Saturday: 10:30 AM – 6:30 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Send an Enquiry</h3>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" placeholder="+91 XXXXX XXXXX">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label>Enquiry Type</label>
+          <select>
+            <option>I want to buy a property</option>
+            <option>I represent a bank / FI</option>
+            <option>NPA Portfolio Assignment</option>
+            <option>Debt Collection Services</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us your requirement — budget, location preference, property type…"></textarea>
+        </div>
+        <button class="btn btn-solid" style="width: 100%; padding: 11px; font-size: 15px;">Submit Enquiry</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-icon">RA</div>
+        <strong>RAAHI AUCTION</strong>
+      </div>
+      <p>Raahi Auction Services India Pvt. Ltd. — Gujarat's most trusted bank auction property platform. Serving banks, investors and buyers since 2018 across Ahmedabad, Surat, Baroda and Mumbai.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#listings">All Listings</a>
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Property Types</h4>
+      <a href="#">Residential Flats</a>
+      <a href="#">Plots &amp; Land</a>
+      <a href="#">Commercial Shops</a>
+      <a href="#">Industrial</a>
+      <a href="#">Vehicles</a>
+      <a href="#">Bungalows</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Disclaimer</a>
+      <a href="#">SARFAESI Act Info</a>
+      <a href="#">FAQs</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Raahi Auction Services India Pvt. Ltd. · CIN: U70200GJ2018PTC101624 · All rights reserved.</span>
+    <div class="footer-socials">
+      <div class="social-ic" title="Facebook">f</div>
+      <div class="social-ic" title="LinkedIn">in</div>
+      <div class="social-ic" title="WhatsApp">W</div>
+      <div class="social-ic" title="Instagram">ig</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+    });
+  });
+  document.querySelectorAll('.page-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.page-btn').forEach(b => b.classList.remove('active'));
+      if (!btn.textContent.includes('→') && btn.textContent !== '…') btn.classList.add('active');
+    });
+  });
+  document.querySelectorAll('.prop-fav').forEach(fav => {
+    fav.addEventListener('click', e => {
+      e.stopPropagation();
+      fav.textContent = fav.textContent === '♡' ? '♥' : '♡';
+      fav.style.color = fav.textContent === '♥' ? '#C0272D' : '';
+    });
+  });
+</script>
+</body>
+</html>
