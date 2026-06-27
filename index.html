@@ -3,523 +3,372 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Raahi Auction Services India Pvt. Ltd. – Gujarat's most trusted bank auction property platform. Find verified bank auction properties in Ahmedabad, flats, plots, commercial, vehicles and more.">
 <title>Raahi Auction Services – Bank Auction Properties in Ahmedabad, Gujarat</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#C0272D;--red-dark:#8B1A1E;--red-light:#F9ECEC;
+  --navy:#1a2340;--navy-light:#253159;
+  --gold:#C89B2C;--gold-light:#FDF5E4;
+  --periwinkle:#7B8EC8;--periwinkle-light:#E8EBF6;
+  --text:#1A1A1A;--text-muted:#5A5A5A;--text-light:#888;
+  --border:#E5E0E0;--bg:#F8F7F5;--white:#fff;
+  --shadow:0 2px 16px rgba(0,0,0,.08);--radius:10px;--nav-h:72px;
+}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",sans-serif;color:var(--text);background:var(--bg);font-size:15px;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+ul{list-style:none}
+button{cursor:pointer;font-family:"Inter",sans-serif}
 
-  :root {
-    --red: #C0272D;
-    --red-dark: #8B1A1E;
-    --red-light: #F9ECEC;
-    --red-mid: #E04048;
-    --gold: #C89B2C;
-    --gold-light: #FDF5E4;
-    --text: #1A1A1A;
-    --text-muted: #5A5A5A;
-    --text-light: #888;
-    --border: #E5E0E0;
-    --bg: #FAFAF9;
-    --white: #fff;
-    --shadow: 0 2px 12px rgba(0,0,0,0.07);
-    --radius: 10px;
-    --nav-h: 70px;
-  }
+/* ANNOUNCE */
+.announce{background:var(--navy);color:rgba(255,255,255,.9);padding:9px 40px;text-align:center;font-size:12.5px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:10px}
+.announce a{color:#FAC775;font-weight:600}
+.announce-badge{background:var(--red);color:white;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;text-transform:uppercase;letter-spacing:.5px}
 
-  html { scroll-behavior: smooth; }
+/* NAV */
+.nav{position:sticky;top:0;z-index:200;background:var(--white);border-bottom:1.5px solid var(--border);height:var(--nav-h);display:flex;align-items:center;padding:0 40px;gap:28px;box-shadow:0 1px 12px rgba(0,0,0,.07)}
+.nav-logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.nav-logo img{height:52px;width:52px;border-radius:50%;object-fit:cover}
+.nav-logo-text strong{font-size:16px;font-weight:800;color:var(--navy);display:block;letter-spacing:-.3px}
+.nav-logo-text span{font-size:9.5px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.7px}
+.nav-links{display:flex;gap:22px;flex:1}
+.nav-links a{font-size:13px;font-weight:500;color:var(--text-muted);transition:color .15s;white-space:nowrap;padding:4px 0}
+.nav-links a:hover{color:var(--red)}
+.nav-links a.active{color:var(--red);border-bottom:2.5px solid var(--red)}
+.nav-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.nav-phone{font-size:12px;font-weight:600;color:var(--navy);white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:8px 18px;border-radius:7px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;border:none;white-space:nowrap}
+.btn-outline{background:transparent;border:1.5px solid var(--red);color:var(--red)}
+.btn-outline:hover{background:var(--red-light)}
+.btn-solid{background:var(--red);color:white}
+.btn-solid:hover{background:var(--red-dark)}
+.btn-navy{background:var(--navy);color:white}
+.btn-navy:hover{background:var(--navy-light)}
+.btn-gold{background:var(--gold);color:white}
+.btn-gold:hover{background:#a07e20}
+.btn-sm{padding:6px 13px;font-size:12px}
+.btn-lg{padding:12px 26px;font-size:15px;border-radius:9px}
 
-  body {
-    font-family: 'Inter', sans-serif;
-    color: var(--text);
-    background: var(--bg);
-    font-size: 15px;
-    line-height: 1.6;
-  }
+/* HERO */
+.hero{background:linear-gradient(135deg,#0D1428 0%,#1a2340 45%,#2d3a6b 100%);color:white;padding:70px 40px 78px;position:relative;overflow:hidden}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(123,142,200,.12) 1px,transparent 1px);background-size:32px 32px;pointer-events:none}
+.hero-glow{position:absolute;right:-60px;top:-60px;width:380px;height:380px;background:radial-gradient(circle,rgba(192,39,45,.22) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:980px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr 230px;gap:36px;align-items:center}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:5px 14px;font-size:11px;letter-spacing:.7px;text-transform:uppercase;margin-bottom:18px;color:rgba(255,255,255,.8)}
+.hero-dot-live{width:6px;height:6px;background:#4ADE80;border-radius:50%;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(26px,4.2vw,48px);line-height:1.12;font-weight:700;margin-bottom:16px;max-width:560px}
+.hero h1 em{color:#FAC775;font-style:normal}
+.hero-sub{font-size:14.5px;color:rgba(255,255,255,.7);max-width:470px;margin-bottom:30px;line-height:1.75}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px}
+.hero-stats{display:flex;gap:32px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.12);padding-top:26px}
+.hero-stat strong{display:block;font-size:25px;font-weight:800;color:#FAC775}
+.hero-stat span{font-size:11px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px}
+.hero-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:22px 18px}
+.hero-card h4{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:rgba(255,255,255,.45);margin-bottom:14px}
+.hc-row{display:flex;align-items:center;gap:9px;margin-bottom:9px;font-size:12.5px}
+.hc-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.hc-dot.green{background:#4ADE80}.hc-dot.gold{background:#FAC775}.hc-dot.red{background:#F87171}
+.hc-val{margin-left:auto;font-weight:700;color:#FAC775}
+.hc-cities{display:flex;flex-wrap:wrap;gap:4px;margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1)}
+.hc-city{background:rgba(255,255,255,.09);border-radius:4px;padding:3px 7px;font-size:10.5px;color:rgba(255,255,255,.65)}
+@media(max-width:720px){.hero-inner{grid-template-columns:1fr}.hero-card{display:none}}
 
-  a { text-decoration: none; color: inherit; }
-  img { display: block; max-width: 100%; }
-  ul { list-style: none; }
+/* SEARCH */
+.search-wrap{background:white;border-bottom:1px solid var(--border);padding:18px 40px}
+.search-inner{max-width:980px;margin:0 auto}
+.search-bar{display:flex;gap:8px;align-items:center;background:#F5F3F3;border:1.5px solid var(--border);border-radius:10px;padding:6px 6px 6px 14px;margin-bottom:11px;transition:border-color .15s}
+.search-bar:focus-within{border-color:var(--red)}
+.s-icon{color:var(--text-muted);flex-shrink:0;font-size:16px}
+.search-bar input{flex:1;border:none;background:transparent;font-size:14px;font-family:"Inter",sans-serif;color:var(--text);outline:none}
+.search-bar input::placeholder{color:var(--text-light)}
+.sb-selects{display:flex;gap:6px;margin-right:6px}
+.sb-selects select{border:1px solid var(--border);background:white;border-radius:6px;padding:5px 8px;font-size:12px;font-family:"Inter",sans-serif;outline:none;color:var(--text-muted)}
+.filter-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.filter-chips{display:flex;gap:5px;flex-wrap:wrap}
+.fc{display:inline-flex;align-items:center;gap:4px;padding:4px 11px;border-radius:20px;font-size:11.5px;font-weight:500;cursor:pointer;border:1.5px solid var(--border);background:white;color:var(--text-muted);transition:all .12s}
+.fc:hover,.fc.active{background:var(--red-light);border-color:var(--red);color:var(--red)}
+.fc-n{font-size:10px;background:var(--border);padding:1px 5px;border-radius:8px}
+.fc.active .fc-n{background:var(--red);color:white}
+.sort-sel{font-size:12px;color:var(--text-muted);display:flex;align-items:center;gap:6px}
+.sort-sel select{border:1px solid var(--border);border-radius:6px;padding:4px 8px;font-size:11.5px;outline:none}
 
-  /* ── NAV ── */
-  .nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    height: var(--nav-h);
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
-    gap: 40px;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
-  }
-  .nav-logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-  .nav-logo-icon {
-    width: 42px; height: 42px;
-    background: var(--red);
-    border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 700; font-size: 18px; color: white; letter-spacing: -1px;
-  }
-  .nav-logo-text { line-height: 1.1; }
-  .nav-logo-text strong { font-size: 17px; font-weight: 700; color: var(--red); display: block; }
-  .nav-logo-text span { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.6px; }
+/* BANKS */
+.banks-strip{background:white;border-bottom:1px solid var(--border)}
+.banks-inner{max-width:980px;margin:0 auto;padding:16px 40px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.banks-label{font-size:10.5px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.7px;white-space:nowrap;flex-shrink:0}
+.bank-badges{display:flex;gap:5px;flex-wrap:wrap}
+.bank-badge{background:#F5F3F3;border:1px solid var(--border);border-radius:5px;padding:4px 11px;font-size:11.5px;font-weight:600;color:var(--text-muted)}
 
-  .nav-links { display: flex; gap: 28px; flex: 1; }
-  .nav-links a {
-    font-size: 13.5px; font-weight: 500; color: var(--text-muted);
-    transition: color 0.15s;
-    white-space: nowrap;
-  }
-  .nav-links a:hover { color: var(--red); }
-  .nav-links a.active { color: var(--red); border-bottom: 2px solid var(--red); padding-bottom: 2px; }
+/* SECTION */
+.section{padding:56px 40px}
+.s-inner{max-width:980px;margin:0 auto}
+.s-head{margin-bottom:28px}
+.s-head h2{font-family:"Playfair Display",serif;font-size:clamp(20px,3vw,28px);font-weight:700;margin-bottom:5px;color:var(--navy)}
+.s-head p{color:var(--text-muted);font-size:13.5px}
+.s-head-row{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px}
+.s-head-row h2{font-family:"Playfair Display",serif;font-size:clamp(19px,3vw,27px);font-weight:700;color:var(--navy)}
+.s-head-row p{color:var(--text-muted);font-size:13px;margin-top:4px}
 
-  .nav-cta { display: flex; gap: 10px; flex-shrink: 0; }
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center;
-    padding: 8px 20px; border-radius: 7px; font-size: 13.5px; font-weight: 600;
-    cursor: pointer; transition: all 0.15s; border: none;
-    white-space: nowrap;
-  }
-  .btn-outline {
-    background: transparent; border: 1.5px solid var(--red); color: var(--red);
-  }
-  .btn-outline:hover { background: var(--red-light); }
-  .btn-solid {
-    background: var(--red); color: white;
-  }
-  .btn-solid:hover { background: var(--red-dark); }
-  .btn-gold {
-    background: var(--gold); color: white;
-  }
-  .btn-gold:hover { background: #a07e20; }
+/* CATS */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(138px,1fr));gap:9px}
+.cat-card{background:white;border:1.5px solid var(--border);border-radius:9px;padding:18px 12px;text-align:center;cursor:pointer;transition:all .15s}
+.cat-card:hover{border-color:var(--red);background:var(--red-light);transform:translateY(-2px)}
+.cat-icon{font-size:26px;margin-bottom:7px}
+.cat-label{font-size:12.5px;font-weight:600;color:var(--navy)}
+.cat-count{font-size:11px;color:var(--text-muted);margin-top:3px}
 
-  /* ── HERO ── */
-  .hero {
-    background: linear-gradient(135deg, #1A0507 0%, #3D0D10 45%, #C0272D 100%);
-    color: white;
-    padding: 72px 40px 80px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute; inset: 0;
-    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0, rgba(255,255,255,0.015) 1px, transparent 0, transparent 50%);
-    background-size: 24px 24px;
-  }
-  .hero-inner { max-width: 980px; margin: 0 auto; position: relative; z-index: 1; }
-  .hero-eyebrow {
-    display: inline-block;
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 5px 14px;
-    font-size: 12px; letter-spacing: 0.8px; text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(32px, 5vw, 52px);
-    line-height: 1.15;
-    font-weight: 700;
-    margin-bottom: 16px;
-    max-width: 700px;
-  }
-  .hero h1 em { color: #FAC775; font-style: normal; }
-  .hero p {
-    font-size: 16px; color: rgba(255,255,255,0.75);
-    max-width: 520px; margin-bottom: 32px; line-height: 1.7;
-  }
-  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 52px; }
-  .hero-stats {
-    display: flex; gap: 40px; flex-wrap: wrap;
-    border-top: 1px solid rgba(255,255,255,0.15);
-    padding-top: 32px;
-  }
-  .hero-stat strong { display: block; font-size: 28px; font-weight: 700; color: #FAC775; }
-  .hero-stat span { font-size: 12.5px; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.5px; }
+/* PROP GRID */
+.prop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:18px}
+.prop-card{background:white;border-radius:9px;border:1px solid var(--border);overflow:hidden;transition:box-shadow .18s,transform .18s;cursor:pointer}
+.prop-card:hover{box-shadow:0 10px 30px rgba(192,39,45,.13);transform:translateY(-3px)}
+.prop-img-wrap{position:relative}
+.img-ph{width:100%;height:172px;display:flex;align-items:center;justify-content:center;font-size:40px}
+.img-flat{background:linear-gradient(135deg,#fde8e8,#fac1c1)}
+.img-plot{background:linear-gradient(135deg,#e8f5e9,#a5d6a7)}
+.img-comm{background:linear-gradient(135deg,#e3f2fd,#90caf9)}
+.img-veh{background:linear-gradient(135deg,#fff8e1,#ffe082)}
+.img-land{background:linear-gradient(135deg,#f3e5f5,#ce93d8)}
+.img-house{background:linear-gradient(135deg,#fbe9e7,#ffab91)}
+.prop-badges{position:absolute;top:9px;left:9px;display:flex;gap:4px}
+.pb{background:var(--red);color:white;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.3px}
+.pb.up{background:var(--gold)}.pb.drt{background:var(--navy)}.pb.sold{background:#555}
+.prop-fav{position:absolute;top:9px;right:9px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer;border:none;transition:transform .12s}
+.prop-fav:hover{transform:scale(1.15)}
+.prop-body{padding:14px}
+.prop-type{font-size:10.5px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.6px;margin-bottom:4px}
+.prop-title{font-size:13.5px;font-weight:700;margin-bottom:4px;line-height:1.35;color:var(--navy)}
+.prop-loc{font-size:11.5px;color:var(--text-muted);margin-bottom:3px}
+.prop-id{font-size:11px;color:var(--text-light);margin-bottom:9px}
+.prop-bank{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:var(--text-muted);background:#F5F3F3;padding:3px 8px;border-radius:4px}
+.prop-bank span{font-weight:700}
+.prop-divider{height:1px;background:var(--border);margin:9px 0}
+.prop-meta{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:8px}
+.prop-pl{font-size:10px;color:var(--text-light);text-transform:uppercase;letter-spacing:.4px}
+.prop-price{font-size:16px;font-weight:800;color:var(--red)}
+.prop-dl{font-size:10px;color:var(--text-light);text-align:right}
+.prop-dv{font-size:12px;font-weight:700;color:var(--text-muted);text-align:right}
+.prop-footer{display:flex;justify-content:space-between;align-items:center}
+.prop-time{font-size:11px;color:var(--text-light)}
+.prop-view{font-size:11.5px;font-weight:700;color:var(--red);background:var(--red-light);border:none;padding:5px 13px;border-radius:5px;cursor:pointer;transition:all .12s}
+.prop-view:hover{background:var(--red);color:white}
 
-  /* ── SEARCH BAR ── */
-  .search-wrap {
-    background: white;
-    border-bottom: 1px solid var(--border);
-    padding: 22px 40px;
-  }
-  .search-inner { max-width: 980px; margin: 0 auto; }
-  .search-bar {
-    display: flex; gap: 10px; align-items: center;
-    background: #F5F3F3;
-    border: 1.5px solid var(--border);
-    border-radius: 10px;
-    padding: 6px 6px 6px 16px;
-    transition: border-color 0.15s;
-  }
-  .search-bar:focus-within { border-color: var(--red); }
-  .search-bar svg { flex-shrink: 0; color: var(--text-muted); width: 18px; height: 18px; }
-  .search-bar input {
-    flex: 1; border: none; background: transparent;
-    font-size: 14.5px; font-family: 'Inter', sans-serif;
-    color: var(--text); outline: none;
-  }
-  .search-bar input::placeholder { color: var(--text-light); }
-  .search-filters { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
-  .filter-chip {
-    display: inline-flex; align-items: center; gap: 5px;
-    padding: 5px 13px; border-radius: 20px; font-size: 12.5px;
-    font-weight: 500; cursor: pointer; border: 1.5px solid var(--border);
-    background: white; color: var(--text-muted); transition: all 0.12s;
-  }
-  .filter-chip:hover, .filter-chip.active {
-    background: var(--red-light); border-color: var(--red); color: var(--red);
-  }
+/* STATS STRIP */
+.stats-strip{background:var(--red);color:white;padding:32px 40px}
+.ss-inner{max-width:980px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:18px;text-align:center}
+.ss-stat strong{display:block;font-size:28px;font-weight:800}
+.ss-stat span{font-size:11.5px;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:.5px}
 
-  /* ── SECTION ── */
-  .section { padding: 60px 40px; }
-  .section-inner { max-width: 980px; margin: 0 auto; }
-  .section-header { margin-bottom: 36px; }
-  .section-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(22px, 3vw, 30px);
-    font-weight: 700; margin-bottom: 6px;
-  }
-  .section-header p { color: var(--text-muted); font-size: 14.5px; }
-  .section-header-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
+/* HOW */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:18px}
+.step-card{background:white;border-radius:9px;border:1px solid var(--border);padding:24px 18px;text-align:center}
+.step-num{width:40px;height:40px;border-radius:50%;background:var(--red);color:white;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 13px}
+.step-card h3{font-size:14px;font-weight:700;margin-bottom:7px;color:var(--navy)}
+.step-card p{font-size:13px;color:var(--text-muted);line-height:1.65}
 
-  /* ── PROPERTY GRID ── */
-  .prop-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-    gap: 22px;
-  }
-  .prop-card {
-    background: white;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    overflow: hidden;
-    transition: box-shadow 0.18s, transform 0.18s;
-    cursor: pointer;
-  }
-  .prop-card:hover { box-shadow: 0 8px 28px rgba(192,39,45,0.12); transform: translateY(-3px); }
-  .prop-img {
-    width: 100%; height: 180px;
-    object-fit: cover;
-    background: #f0ecec;
-    display: block;
-    position: relative;
-  }
-  .prop-img-wrap { position: relative; }
-  .prop-badge {
-    position: absolute; top: 10px; left: 10px;
-    background: var(--red); color: white;
-    font-size: 11px; font-weight: 600;
-    padding: 3px 9px; border-radius: 5px;
-    text-transform: uppercase; letter-spacing: 0.4px;
-  }
-  .prop-badge.upcoming { background: var(--gold); }
-  .prop-badge.sold { background: #444; }
-  .prop-fav {
-    position: absolute; top: 10px; right: 10px;
-    width: 30px; height: 30px; border-radius: 50%;
-    background: rgba(255,255,255,0.9);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 14px; cursor: pointer; transition: transform 0.12s;
-  }
-  .prop-fav:hover { transform: scale(1.15); }
-  .prop-body { padding: 16px; }
-  .prop-type { font-size: 11.5px; font-weight: 600; color: var(--red); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
-  .prop-title { font-size: 14.5px; font-weight: 600; margin-bottom: 4px; line-height: 1.4; }
-  .prop-loc { font-size: 12.5px; color: var(--text-muted); margin-bottom: 12px; display: flex; align-items: center; gap: 4px; }
-  .prop-divider { height: 1px; background: var(--border); margin-bottom: 12px; }
-  .prop-meta { display: flex; justify-content: space-between; align-items: flex-end; }
-  .prop-price-label { font-size: 11px; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.4px; }
-  .prop-price { font-size: 17px; font-weight: 700; color: var(--red); }
-  .prop-date { text-align: right; }
-  .prop-date-label { font-size: 11px; color: var(--text-light); }
-  .prop-date-val { font-size: 12.5px; font-weight: 600; color: var(--text-muted); }
-  .prop-bank {
-    display: flex; align-items: center; gap: 5px;
-    font-size: 11.5px; color: var(--text-muted);
-    background: #F5F3F3; padding: 3px 9px; border-radius: 5px;
-    margin-top: 10px; width: fit-content;
-  }
-  .prop-bank span { font-weight: 600; }
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:16px}
+.svc-card{background:white;border-radius:9px;border:1px solid var(--border);padding:22px 18px;transition:box-shadow .15s,border-color .15s}
+.svc-card:hover{box-shadow:var(--shadow);border-color:var(--red)}
+.svc-icon{width:42px;height:42px;border-radius:9px;background:var(--red-light);display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:13px}
+.svc-card h3{font-size:14px;font-weight:700;margin-bottom:7px;color:var(--navy)}
+.svc-card p{font-size:13px;color:var(--text-muted);line-height:1.65}
 
-  /* placeholder image colors per type */
-  .img-flat { background: linear-gradient(135deg, #fde8e8 0%, #fac1c1 100%); }
-  .img-plot { background: linear-gradient(135deg, #e8f5e9 0%, #a5d6a7 100%); }
-  .img-commercial { background: linear-gradient(135deg, #e3f2fd 0%, #90caf9 100%); }
-  .img-vehicle { background: linear-gradient(135deg, #fff8e1 0%, #ffe082 100%); }
-  .img-land { background: linear-gradient(135deg, #f3e5f5 0%, #ce93d8 100%); }
-  .img-house { background: linear-gradient(135deg, #fbe9e7 0%, #ffab91 100%); }
-  .img-placeholder {
-    width: 100%; height: 180px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 40px;
-  }
+/* TESTI */
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:16px}
+.testi-card{background:white;border-radius:9px;border:1px solid var(--border);padding:20px}
+.stars{color:var(--gold);font-size:13px;margin-bottom:9px}
+.testi-card p{font-size:13.5px;color:var(--text-muted);line-height:1.7;margin-bottom:14px;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:9px}
+.testi-av{width:34px;height:34px;border-radius:50%;background:var(--periwinkle-light);color:var(--periwinkle);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+.testi-name{font-size:13px;font-weight:700;color:var(--navy)}
+.testi-loc{font-size:11.5px;color:var(--text-muted)}
 
-  /* ── CATEGORY PILLS ── */
-  .cat-grid {
-    display: flex; gap: 12px; flex-wrap: wrap;
-  }
-  .cat-card {
-    flex: 1; min-width: 120px;
-    background: white;
-    border: 1.5px solid var(--border);
-    border-radius: var(--radius);
-    padding: 20px 16px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.15s;
-  }
-  .cat-card:hover {
-    border-color: var(--red);
-    background: var(--red-light);
-  }
-  .cat-icon { font-size: 28px; margin-bottom: 8px; }
-  .cat-label { font-size: 13px; font-weight: 600; color: var(--text); }
-  .cat-count { font-size: 11.5px; color: var(--text-muted); margin-top: 2px; }
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+@media(max-width:680px){.about-grid{grid-template-columns:1fr}}
+.about-mini{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.amc{background:white;border-radius:9px;border:1px solid var(--border);padding:18px;text-align:center}
+.amc.red{background:var(--red);border-color:var(--red)}
+.amc strong{display:block;font-size:24px;font-weight:800;color:var(--red)}
+.amc.red strong{color:white}
+.amc span{font-size:11.5px;color:var(--text-muted);margin-top:3px;display:block}
+.amc.red span{color:rgba(255,255,255,.75)}
+.tag-pill{display:inline-block;background:var(--periwinkle-light);color:var(--periwinkle);font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:13px;text-transform:uppercase;letter-spacing:.5px}
 
-  /* ── STATS STRIP ── */
-  .stats-strip {
-    background: var(--red);
-    color: white;
-    padding: 40px;
-  }
-  .stats-strip-inner {
-    max-width: 980px; margin: 0 auto;
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 24px; text-align: center;
-  }
-  .strip-stat strong { display: block; font-size: 32px; font-weight: 700; }
-  .strip-stat span { font-size: 13px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.5px; }
+/* CTA */
+.cta-banner{background:linear-gradient(135deg,#0D1428,#1a2340);color:white;text-align:center;padding:60px 40px}
+.cta-banner h2{font-family:"Playfair Display",serif;font-size:clamp(21px,3.8vw,34px);font-weight:700;margin-bottom:11px}
+.cta-banner p{font-size:14px;color:rgba(255,255,255,.68);margin-bottom:26px;max-width:450px;margin-left:auto;margin-right:auto}
+.cta-acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 
-  /* ── HOW IT WORKS ── */
-  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
-  .step-card {
-    background: white; border-radius: var(--radius);
-    border: 1px solid var(--border); padding: 28px 22px; text-align: center;
-  }
-  .step-num {
-    width: 44px; height: 44px; border-radius: 50%;
-    background: var(--red-light); color: var(--red);
-    font-size: 18px; font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
-    margin: 0 auto 16px;
-  }
-  .step-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
-  .step-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; }
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:680px){.contact-grid{grid-template-columns:1fr}}
+.ci h3{font-size:17px;font-weight:700;margin-bottom:17px;color:var(--navy)}
+.cr{display:flex;gap:11px;align-items:flex-start;margin-bottom:15px}
+.cr-ic{width:35px;height:35px;border-radius:7px;background:var(--red-light);color:var(--red);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;margin-top:2px}
+.cr strong{display:block;font-size:12px;font-weight:700;margin-bottom:2px;color:var(--navy)}
+.cr span{font-size:13px;color:var(--text-muted)}
+.cf{background:white;border-radius:9px;border:1px solid var(--border);padding:24px}
+.cf h3{font-size:15.5px;font-weight:700;margin-bottom:16px;color:var(--navy)}
+.fg{margin-bottom:11px}
+.fg label{display:block;font-size:11px;font-weight:700;margin-bottom:4px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.4px}
+.fg input,.fg select,.fg textarea{width:100%;padding:8px 11px;border:1.5px solid var(--border);border-radius:6px;font-size:13.5px;font-family:"Inter",sans-serif;color:var(--text);background:#FAFAF9;outline:none;transition:border-color .15s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--red);background:white}
+.fg textarea{resize:vertical;min-height:80px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:9px}
 
-  /* ── SERVICES ── */
-  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
-  .svc-card {
-    background: white; border-radius: var(--radius);
-    border: 1px solid var(--border); padding: 26px 22px;
-    transition: box-shadow 0.15s;
-  }
-  .svc-card:hover { box-shadow: var(--shadow); }
-  .svc-icon {
-    width: 46px; height: 46px; border-radius: 10px;
-    background: var(--red-light); display: flex; align-items: center;
-    justify-content: center; font-size: 22px; margin-bottom: 16px;
-  }
-  .svc-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
-  .svc-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.65; }
+/* PAGINATION */
+.pagination{display:flex;gap:5px;justify-content:center;margin-top:28px;flex-wrap:wrap}
+.page-btn{width:33px;height:33px;border-radius:6px;border:1.5px solid var(--border);background:white;font-size:12.5px;font-weight:500;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text-muted);transition:all .12s}
+.page-btn:hover{border-color:var(--red);color:var(--red)}
+.page-btn.active{background:var(--red);border-color:var(--red);color:white;font-weight:700}
+.page-btn.wide{width:auto;padding:0 11px}
 
-  /* ── BANKS STRIP ── */
-  .banks-strip { background: white; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-  .banks-inner {
-    max-width: 980px; margin: 0 auto; padding: 28px 40px;
-    display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
-  }
-  .banks-label { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.6px; white-space: nowrap; }
-  .bank-badges { display: flex; gap: 10px; flex-wrap: wrap; }
-  .bank-badge {
-    background: #F5F3F3; border: 1px solid var(--border);
-    border-radius: 6px; padding: 6px 14px;
-    font-size: 12.5px; font-weight: 600; color: var(--text-muted);
-  }
+/* INFO BOX */
+.info-box{background:#FDF5E4;border:1.5px solid #F0C85A;border-radius:9px;padding:11px 15px;font-size:13px;color:#7A5C10;margin-bottom:20px;display:flex;gap:9px}
 
-  /* ── TESTIMONIALS ── */
-  .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-  .testi-card {
-    background: white; border-radius: var(--radius);
-    border: 1px solid var(--border); padding: 24px 22px;
-  }
-  .stars { color: var(--gold); font-size: 14px; margin-bottom: 10px; }
-  .testi-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px; font-style: italic; }
-  .testi-author { display: flex; align-items: center; gap: 10px; }
-  .testi-avatar {
-    width: 36px; height: 36px; border-radius: 50%;
-    background: var(--red-light); color: var(--red);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 13px; font-weight: 700;
-  }
-  .testi-name { font-size: 13.5px; font-weight: 600; }
-  .testi-loc { font-size: 12px; color: var(--text-muted); }
+/* FOOTER */
+.footer{background:#0D1428;color:rgba(255,255,255,.6);padding:48px 40px 22px}
+.footer-grid{max-width:980px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.08)}
+@media(max-width:720px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
+.fl{display:flex;align-items:center;gap:9px;margin-bottom:13px}
+.fl img{height:42px;width:42px;border-radius:50%;object-fit:cover}
+.fl strong{font-size:15px;font-weight:800;color:white}
+.footer-brand p{font-size:12.5px;line-height:1.75;max-width:270px;margin-bottom:13px}
+.footer-socials{display:flex;gap:7px}
+.si{width:30px;height:30px;border-radius:6px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:rgba(255,255,255,.55);cursor:pointer;transition:background .15s}
+.si:hover{background:var(--red);color:white}
+.footer-col h4{color:white;font-size:11.5px;font-weight:700;margin-bottom:13px;text-transform:uppercase;letter-spacing:.6px}
+.footer-col a{display:block;font-size:12px;color:rgba(255,255,255,.5);margin-bottom:8px;transition:color .12s}
+.footer-col a:hover{color:white}
+.footer-bottom{max-width:980px;margin:18px auto 0;display:flex;justify-content:space-between;align-items:center;font-size:11.5px;flex-wrap:wrap;gap:8px}
+.footer-cin{font-size:10.5px;color:rgba(255,255,255,.28);margin-top:3px}
 
-  /* ── CTA BANNER ── */
-  .cta-banner {
-    background: linear-gradient(135deg, #1A0507, #3D0D10);
-    color: white; text-align: center; padding: 72px 40px;
-  }
-  .cta-banner h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(24px, 4vw, 38px);
-    font-weight: 700; margin-bottom: 12px;
-  }
-  .cta-banner p { font-size: 15px; color: rgba(255,255,255,0.7); margin-bottom: 28px; max-width: 480px; margin-left: auto; margin-right: auto; }
-  .cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+/* ═══════════════ ADMIN PANEL ═══════════════ */
+.admin-overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.55);align-items:center;justify-content:center}
+.admin-overlay.open{display:flex}
+.admin-modal{background:white;border-radius:16px;width:min(96vw,1060px);height:min(90vh,700px);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 24px 80px rgba(0,0,0,.3)}
+.am-header{background:var(--navy);color:white;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.am-header h2{font-size:15px;font-weight:700;display:flex;align-items:center;gap:9px}
+.am-header img{height:30px;width:30px;border-radius:50%;object-fit:cover}
+.admin-badge{background:var(--red);font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;text-transform:uppercase}
+.am-close{width:30px;height:30px;border-radius:7px;background:rgba(255,255,255,.1);border:none;color:white;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.am-close:hover{background:rgba(255,255,255,.2)}
+.am-body{display:flex;flex:1;overflow:hidden}
+.am-sidebar{width:205px;background:#F8F7F5;border-right:1px solid var(--border);padding:12px 0;flex-shrink:0;overflow-y:auto}
+.am-sidebar h5{font-size:9.5px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.7px;padding:8px 14px 3px;margin-top:6px}
+.am-sidebar h5:first-child{margin-top:0}
+.ani{display:flex;align-items:center;gap:8px;padding:8px 14px;font-size:12.5px;font-weight:500;color:var(--text-muted);cursor:pointer;transition:all .12s;border:none;background:transparent;width:100%;text-align:left}
+.ani:hover{background:rgba(192,39,45,.06);color:var(--red)}
+.ani.active{background:var(--red-light);color:var(--red);font-weight:700;border-right:3px solid var(--red)}
+.ani .ic{font-size:15px;flex-shrink:0}
+.ani .bc{margin-left:auto;background:var(--red);color:white;font-size:9.5px;font-weight:700;padding:1px 6px;border-radius:10px}
+.am-content{flex:1;overflow-y:auto;padding:18px}
 
-  /* ── CONTACT ── */
-  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-  @media (max-width: 680px) { .contact-grid { grid-template-columns: 1fr; } }
-  .contact-info h3 { font-size: 18px; font-weight: 700; margin-bottom: 20px; }
-  .contact-row {
-    display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px;
-  }
-  .contact-ic {
-    width: 38px; height: 38px; border-radius: 8px;
-    background: var(--red-light); color: var(--red);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 17px; flex-shrink: 0;
-  }
-  .contact-row strong { display: block; font-size: 13px; font-weight: 600; margin-bottom: 2px; }
-  .contact-row span { font-size: 13.5px; color: var(--text-muted); }
-  .contact-form { background: white; border-radius: var(--radius); border: 1px solid var(--border); padding: 28px; }
-  .contact-form h3 { font-size: 17px; font-weight: 700; margin-bottom: 20px; }
-  .form-group { margin-bottom: 14px; }
-  .form-group label { display: block; font-size: 12.5px; font-weight: 600; margin-bottom: 6px; color: var(--text-muted); }
-  .form-group input, .form-group select, .form-group textarea {
-    width: 100%; padding: 9px 12px;
-    border: 1.5px solid var(--border); border-radius: 7px;
-    font-size: 14px; font-family: 'Inter', sans-serif; color: var(--text);
-    background: #FAFAF9; outline: none; transition: border-color 0.15s;
-  }
-  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--red); }
-  .form-group textarea { resize: vertical; min-height: 90px; }
+/* ADMIN TABS */
+.atab{display:none}
+.atab.active{display:block}
 
-  /* ── FOOTER ── */
-  .footer {
-    background: #1A0507; color: rgba(255,255,255,0.7);
-    padding: 56px 40px 28px;
-  }
-  .footer-grid {
-    max-width: 980px; margin: 0 auto;
-    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 40px; padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-  }
-  @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
-  .footer-brand { }
-  .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-  .footer-logo-icon {
-    width: 38px; height: 38px; background: var(--red);
-    border-radius: 7px; display: flex; align-items: center; justify-content: center;
-    font-weight: 700; font-size: 16px; color: white; letter-spacing: -1px;
-  }
-  .footer-logo strong { font-size: 16px; font-weight: 700; color: white; }
-  .footer-brand p { font-size: 13px; line-height: 1.7; max-width: 280px; }
-  .footer-col h4 { color: white; font-size: 13.5px; font-weight: 700; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .footer-col a { display: block; font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 9px; transition: color 0.12s; }
-  .footer-col a:hover { color: white; }
-  .footer-bottom {
-    max-width: 980px; margin: 24px auto 0;
-    display: flex; justify-content: space-between; align-items: center;
-    font-size: 12.5px; flex-wrap: wrap; gap: 10px;
-  }
-  .footer-socials { display: flex; gap: 12px; }
-  .social-ic {
-    width: 32px; height: 32px; border-radius: 6px;
-    background: rgba(255,255,255,0.08);
-    display: flex; align-items: center; justify-content: center;
-    color: rgba(255,255,255,0.7); font-size: 14px;
-    transition: background 0.15s; cursor: pointer;
-  }
-  .social-ic:hover { background: var(--red); color: white; }
+/* ADMIN STAT CARDS */
+.a-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin-bottom:18px}
+.asc{background:white;border:1px solid var(--border);border-radius:9px;padding:14px;position:relative;overflow:hidden}
+.asc::before{content:"";position:absolute;top:0;left:0;right:0;height:3px}
+.asc.red::before{background:var(--red)}.asc.green::before{background:#22C55E}.asc.blue::before{background:#3B82F6}.asc.gold::before{background:var(--gold)}
+.asc-lbl{font-size:11px;color:var(--text-muted);margin-bottom:5px}
+.asc-val{font-size:21px;font-weight:800;color:var(--navy)}
+.asc-sub{font-size:10.5px;color:var(--text-muted);margin-top:2px}
+.asc-trend{position:absolute;top:12px;right:12px;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:10px}
+.asc-trend.up{background:#DCFCE7;color:#16A34A}.asc-trend.dn{background:#FEE2E2;color:#DC2626}
 
-  /* ── PAGINATION ── */
-  .pagination { display: flex; gap: 6px; justify-content: center; margin-top: 36px; flex-wrap: wrap; }
-  .page-btn {
-    width: 36px; height: 36px; border-radius: 7px;
-    border: 1.5px solid var(--border); background: white;
-    font-size: 13.5px; font-weight: 500; cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    transition: all 0.12s; color: var(--text-muted);
-  }
-  .page-btn:hover { border-color: var(--red); color: var(--red); }
-  .page-btn.active { background: var(--red); border-color: var(--red); color: white; }
+/* ADMIN TABLE */
+.atw{background:white;border:1px solid var(--border);border-radius:9px;overflow:hidden;margin-bottom:16px}
+.ath{padding:12px 15px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);background:#FAFAFA}
+.ath h4{font-size:13px;font-weight:700;color:var(--navy)}
+.ath-r{display:flex;gap:7px;align-items:center}
+.a-si{padding:6px 10px;border:1.5px solid var(--border);border-radius:6px;font-size:12px;outline:none;width:150px;font-family:"Inter",sans-serif}
+.a-si:focus{border-color:var(--red)}
+table.at{width:100%;border-collapse:collapse;font-size:12px}
+table.at th{background:#F5F3F3;font-size:10.5px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.4px;padding:9px 12px;text-align:left;border-bottom:1px solid var(--border)}
+table.at td{padding:9px 12px;border-bottom:1px solid #F0EDE8;vertical-align:middle;color:var(--text)}
+table.at tr:last-child td{border-bottom:none}
+table.at tr:hover td{background:#FAFAFA}
+.ab{display:inline-flex;align-items:center;padding:2px 7px;border-radius:9px;font-size:10px;font-weight:700;text-transform:uppercase}
+.ab.live{background:#DCFCE7;color:#16A34A}.ab.up{background:#FEF3C7;color:#92400E}.ab.sold{background:#F1F5F9;color:#475569}
+.ab.active{background:#DCFCE7;color:#16A34A}.ab.inactive{background:#F1F5F9;color:#64748B}
+.ab.new{background:#EFF6FF;color:#1D4ED8}.ab.pub{background:#DCFCE7;color:#16A34A}.ab.draft{background:#FEF3C7;color:#92400E}
+.ab.vbank{background:#F0FDF4;color:#166534}
+.aib{width:26px;height:26px;border:1.5px solid var(--border);border-radius:5px;background:white;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:12px;transition:all .12s}
+.aib:hover{border-color:var(--red);color:var(--red);background:var(--red-light)}
 
-  /* ── ANNOUNCEMENT STRIP ── */
-  .announce {
-    background: var(--gold); color: white;
-    padding: 10px 40px;
-    text-align: center; font-size: 13px; font-weight: 500;
-  }
-  .announce a { color: white; text-decoration: underline; font-weight: 600; }
+/* ADMIN FORM */
+.afg2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.afg{margin-bottom:10px}
+.afg label{display:block;font-size:10.5px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}
+.afg input,.afg select,.afg textarea{width:100%;padding:7px 10px;border:1.5px solid var(--border);border-radius:6px;font-size:12.5px;font-family:"Inter",sans-serif;color:var(--text);outline:none;transition:border-color .15s}
+.afg input:focus,.afg select:focus,.afg textarea:focus{border-color:var(--red)}
+.afg textarea{min-height:72px;resize:vertical}
+.a-stitle{font-size:12.5px;font-weight:700;color:var(--navy);margin:16px 0 8px;padding-bottom:5px;border-bottom:1px solid var(--border)}
+.upload-zone{border:2px dashed var(--border);border-radius:7px;padding:20px;text-align:center;cursor:pointer;transition:all .15s;background:#FAFAF9}
+.upload-zone:hover{border-color:var(--red);background:var(--red-light)}
+.upload-zone p{font-size:12.5px;color:var(--text-muted);margin-top:5px}
+.a-acts{display:flex;gap:7px;justify-content:flex-end;margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}
 
-  /* ── MOBILE ── */
-  @media (max-width: 640px) {
-    .nav { padding: 0 16px; gap: 16px; }
-    .nav-links { display: none; }
-    .section { padding: 44px 20px; }
-    .hero { padding: 48px 20px 56px; }
-    .search-wrap { padding: 16px 20px; }
-    .hero-stats { gap: 24px; }
-    .stats-strip { padding: 32px 20px; }
-    .banks-inner { padding: 20px; }
-    .contact-grid { grid-template-columns: 1fr; }
-    .footer { padding: 40px 20px 20px; }
-    .announce { padding: 10px 20px; }
-  }
+/* ENQUIRY */
+.enq-card{background:white;border:1px solid var(--border);border-radius:8px;padding:13px;margin-bottom:9px;display:flex;gap:12px;align-items:flex-start}
+.enq-av{width:36px;height:36px;border-radius:50%;background:var(--periwinkle-light);color:var(--periwinkle);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0}
+.enq-body{flex:1}
+.enq-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:4px}
+.enq-name{font-size:13px;font-weight:700;color:var(--navy)}
+.enq-time{font-size:10.5px;color:var(--text-light)}
+.enq-msg{font-size:12.5px;color:var(--text-muted);line-height:1.55}
+.enq-meta{display:flex;gap:6px;margin-top:7px;flex-wrap:wrap}
+.enq-tag{font-size:10.5px;background:#F5F3F3;padding:2px 7px;border-radius:4px;color:var(--text-muted);font-weight:500}
+.enq-acts{display:flex;gap:4px;flex-shrink:0}
 
-  /* Tag */
-  .tag {
-    display: inline-flex; align-items: center;
-    padding: 3px 10px; border-radius: 20px; font-size: 11.5px; font-weight: 600;
-    background: var(--red-light); color: var(--red);
-  }
-  .tag.gold { background: var(--gold-light); color: #9a7616; }
-
-  /* Breadcrumb */
-  .breadcrumb {
-    display: flex; align-items: center; gap: 6px;
-    font-size: 13px; color: var(--text-muted);
-    padding: 14px 40px;
-    max-width: calc(980px + 80px); margin: 0 auto;
-    border-bottom: 1px solid var(--border);
-  }
-  .breadcrumb a:hover { color: var(--red); }
-  .breadcrumb-sep { color: var(--border); }
-
-  /* Alert box */
-  .info-box {
-    background: #FDF5E4; border: 1.5px solid #F0C85A;
-    border-radius: var(--radius); padding: 14px 18px;
-    font-size: 13.5px; color: #7A5C10; margin-bottom: 24px;
-    display: flex; gap: 10px; align-items: flex-start;
-  }
+/* MINI CHART */
+.mc{display:flex;align-items:flex-end;gap:4px;height:55px}
+.mb{flex:1;background:var(--red-light);border-radius:3px 3px 0 0;min-height:4px;position:relative}
+.mb:hover,.mb.hl{background:var(--red)}
+.mb-l{position:absolute;bottom:-15px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--text-light);white-space:nowrap}
+.cw{background:white;border:1px solid var(--border);border-radius:9px;padding:14px;margin-bottom:14px}
+.cw-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.cw-title{font-size:13px;font-weight:700;color:var(--navy)}
+.a-frm{background:white;border:1px solid var(--border);border-radius:9px;padding:18px}
+@media(max-width:580px){
+  .nav{padding:0 14px;gap:12px}.nav-links{display:none}.nav-phone{display:none}
+  .section,.s-inner{padding:36px 16px}
+  .hero{padding:40px 16px 48px}
+  .search-wrap{padding:13px 16px}
+  .stats-strip{padding:26px 16px}
+  .banks-inner{padding:14px 16px}
+  .footer{padding:38px 16px 18px}
+  .announce{padding:8px 14px;font-size:11px}
+  .about-mini{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
 <body>
 
-<!-- ANNOUNCEMENT STRIP -->
 <div class="announce">
-  🏛️ New bank auction listings added daily — <a href="#listings">Browse latest properties in Ahmedabad</a>
+  <span class="announce-badge">Live</span>
+  New bank auction listings added daily —
+  <a href="#listings">Browse latest Ahmedabad properties</a>
+  &nbsp;·&nbsp; 📞 +91 84888 48874
 </div>
 
-<!-- NAV -->
 <nav class="nav">
   <div class="nav-logo">
-    <div class="nav-logo-icon">RA</div>
+    <img src="data:image/jpeg;base64,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" alt="Raahi Auction Logo">
     <div class="nav-logo-text">
       <strong>RAAHI AUCTION</strong>
-      <span>Services India Pvt. Ltd.</span>
+      <span>Services (India) Pvt. Ltd.</span>
     </div>
   </div>
   <div class="nav-links">
@@ -530,290 +379,244 @@
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </div>
-  <div class="nav-cta">
-    <a href="#contact" class="btn btn-outline">Login</a>
-    <a href="#contact" class="btn btn-solid">Register Free</a>
+  <div class="nav-right">
+    <div class="nav-phone">📞 +91 84888 48874</div>
+    <button class="btn btn-navy btn-sm" onclick="openAdmin()">⚙ Admin Panel</button>
+    <a href="#contact" class="btn btn-outline btn-sm">Login</a>
+    <a href="#contact" class="btn btn-solid btn-sm">Register Free</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-dots"></div>
+  <div class="hero-glow"></div>
   <div class="hero-inner">
-    <div class="hero-eyebrow">Gujarat's Most Trusted Auction Services Platform</div>
-    <h1>Find <em>Bank Auction</em> Properties in Ahmedabad &amp; Gujarat</h1>
-    <p>Verified listings of bank-seized properties — flats, plots, commercial spaces, vehicles and more — at below-market reserve prices. Trusted by buyers and banks since 2018.</p>
-    <div class="hero-actions">
-      <a href="#listings" class="btn btn-gold" style="padding:12px 28px; font-size:15px;">Browse Auctions</a>
-      <a href="#contact" class="btn btn-outline" style="padding:12px 28px; font-size:15px; border-color:rgba(255,255,255,0.4); color:white;">Talk to an Expert</a>
+    <div>
+      <div class="hero-eyebrow"><span class="hero-dot-live"></span> Gujarat's Most Trusted Auction Platform since 2018</div>
+      <h1>Find <em>Bank Auction</em><br>Properties at Below‑Market Prices</h1>
+      <p class="hero-sub">Verified listings of bank-seized flats, plots, commercial spaces &amp; vehicles across Ahmedabad &amp; Gujarat — directly from 40+ scheduled banks.</p>
+      <div class="hero-actions">
+        <a href="#listings" class="btn btn-gold btn-lg">Browse Auctions</a>
+        <a href="tel:+918488848874" class="btn btn-lg" style="border:1.5px solid rgba(255,255,255,.28);color:white;background:rgba(255,255,255,.07)">📞 Talk to Expert</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>8+</strong><span>Years Active</span></div>
+        <div class="hero-stat"><strong>2,400+</strong><span>Live Listings</span></div>
+        <div class="hero-stat"><strong>40+</strong><span>Bank Partners</span></div>
+        <div class="hero-stat"><strong>4.8★</strong><span>Client Rating</span></div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><strong>8+</strong><span>Years in Operation</span></div>
-      <div class="hero-stat"><strong>2,400+</strong><span>Active Listings</span></div>
-      <div class="hero-stat"><strong>40+</strong><span>Bank Partners</span></div>
-      <div class="hero-stat"><strong>4.8★</strong><span>Client Rating</span></div>
+    <div class="hero-card">
+      <h4>Live Auction Activity</h4>
+      <div class="hc-row"><div class="hc-dot green"></div> Auctions Today <div class="hc-val">14</div></div>
+      <div class="hc-row"><div class="hc-dot gold"></div> Upcoming (7 days) <div class="hc-val">83</div></div>
+      <div class="hc-row"><div class="hc-dot red"></div> New Listings <div class="hc-val">28</div></div>
+      <div class="hc-cities">
+        <span class="hc-city">Ahmedabad</span><span class="hc-city">Surat</span><span class="hc-city">Baroda</span>
+        <span class="hc-city">Gandhinagar</span><span class="hc-city">Rajkot</span><span class="hc-city">Mumbai</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SEARCH BAR -->
+<!-- SEARCH -->
 <div class="search-wrap">
   <div class="search-inner">
     <div class="search-bar">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-      </svg>
+      <span class="s-icon">🔍</span>
       <input type="text" placeholder="Search by area, property type, bank or auction ID…">
-      <a href="#listings" class="btn btn-solid" style="padding:8px 22px;">Search</a>
+      <div class="sb-selects">
+        <select><option>All Cities</option><option>Ahmedabad</option><option>Surat</option><option>Baroda</option><option>Gandhinagar</option><option>Rajkot</option></select>
+        <select><option>All Banks</option><option>SBI</option><option>HDFC</option><option>ICICI</option><option>Bank of Baroda</option><option>PNB</option></select>
+      </div>
+      <button class="btn btn-solid btn-sm">Search</button>
     </div>
-    <div class="search-filters">
-      <button class="filter-chip active">All Types</button>
-      <button class="filter-chip">Residential</button>
-      <button class="filter-chip">Commercial</button>
-      <button class="filter-chip">Plots &amp; Land</button>
-      <button class="filter-chip">Vehicles</button>
-      <button class="filter-chip">Industrial</button>
-      <button class="filter-chip">Upcoming Only</button>
+    <div class="filter-row">
+      <div class="filter-chips">
+        <button class="fc active">All <span class="fc-n">2198</span></button>
+        <button class="fc">Residential <span class="fc-n">1050</span></button>
+        <button class="fc">Commercial <span class="fc-n">290</span></button>
+        <button class="fc">Plots &amp; Land <span class="fc-n">610</span></button>
+        <button class="fc">Vehicles <span class="fc-n">180</span></button>
+        <button class="fc">Industrial <span class="fc-n">68</span></button>
+        <button class="fc" style="background:var(--periwinkle-light);border-color:var(--periwinkle);color:var(--periwinkle)">🔔 Upcoming</button>
+      </div>
+      <div class="sort-sel">Sort: <select><option>Auction Date (Soonest)</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Newest First</option></select></div>
     </div>
   </div>
 </div>
 
-<!-- BANKS STRIP -->
+<!-- BANKS -->
 <div class="banks-strip">
   <div class="banks-inner">
     <div class="banks-label">Partner Banks</div>
     <div class="bank-badges">
-      <span class="bank-badge">SBI</span>
-      <span class="bank-badge">HDFC Bank</span>
-      <span class="bank-badge">ICICI Bank</span>
-      <span class="bank-badge">Bank of Baroda</span>
-      <span class="bank-badge">PNB</span>
-      <span class="bank-badge">Union Bank</span>
-      <span class="bank-badge">Axis Bank</span>
-      <span class="bank-badge">DCB Bank</span>
-      <span class="bank-badge">Canara Bank</span>
-      <span class="bank-badge">+ 30 more</span>
+      <span class="bank-badge">SBI</span><span class="bank-badge">HDFC Bank</span><span class="bank-badge">ICICI Bank</span>
+      <span class="bank-badge">Bank of Baroda</span><span class="bank-badge">PNB</span><span class="bank-badge">Union Bank</span>
+      <span class="bank-badge">Axis Bank</span><span class="bank-badge">DCB Bank</span><span class="bank-badge">Canara Bank</span>
+      <span class="bank-badge">Jana SFB</span><span class="bank-badge">+ 30 more</span>
     </div>
   </div>
 </div>
 
 <!-- CATEGORIES -->
-<section class="section" style="background: white; border-bottom: 1px solid var(--border);">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2>Browse by Category</h2>
-      <p>Find the right asset type for your investment</p>
+<section class="section" style="background:white;border-bottom:1px solid var(--border);padding:32px 40px">
+  <div class="s-inner">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+      <h3 style="font-size:15.5px;font-weight:700;color:var(--navy)">Browse by Category</h3>
+      <span style="font-size:12.5px;color:var(--text-muted)">2,198 listings in Ahmedabad</span>
     </div>
     <div class="cat-grid">
-      <div class="cat-card">
-        <div class="cat-icon">🏠</div>
-        <div class="cat-label">Residential Flat</div>
-        <div class="cat-count">840+ listings</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">🏗️</div>
-        <div class="cat-label">Plot / Land</div>
-        <div class="cat-count">610+ listings</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">🏢</div>
-        <div class="cat-label">Commercial</div>
-        <div class="cat-count">290+ listings</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">🚗</div>
-        <div class="cat-label">Vehicles</div>
-        <div class="cat-count">180+ listings</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">🏭</div>
-        <div class="cat-label">Industrial</div>
-        <div class="cat-count">95+ listings</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icon">🏘️</div>
-        <div class="cat-label">Bungalow / House</div>
-        <div class="cat-count">210+ listings</div>
-      </div>
+      <div class="cat-card"><div class="cat-icon">🏠</div><div class="cat-label">Residential Flat</div><div class="cat-count">840+ listings</div></div>
+      <div class="cat-card"><div class="cat-icon">🏗️</div><div class="cat-label">Plot / Land</div><div class="cat-count">610+ listings</div></div>
+      <div class="cat-card"><div class="cat-icon">🏢</div><div class="cat-label">Commercial Shop</div><div class="cat-count">290+ listings</div></div>
+      <div class="cat-card"><div class="cat-icon">🚗</div><div class="cat-label">Vehicles</div><div class="cat-count">180+ listings</div></div>
+      <div class="cat-card"><div class="cat-icon">🏭</div><div class="cat-label">Industrial</div><div class="cat-count">68+ listings</div></div>
+      <div class="cat-card"><div class="cat-icon">🏘️</div><div class="cat-label">Bungalow / House</div><div class="cat-count">210+ listings</div></div>
     </div>
   </div>
 </section>
 
 <!-- LISTINGS -->
 <section class="section" id="listings">
-  <div class="section-inner">
-    <div class="section-header-row section-header">
-      <div>
-        <h2>Bank Auction Properties in Ahmedabad</h2>
-        <p>2,198 verified listings · Updated daily from official bank notices</p>
-      </div>
-      <a href="#listings" class="btn btn-outline" style="white-space:nowrap;">View All Listings</a>
+  <div class="s-inner">
+    <div class="s-head-row">
+      <div><h2>Bank Auction Properties – Ahmedabad</h2><p>2,198 verified listings · Updated daily from official bank e-auction portals &amp; DRT notices</p></div>
+      <a href="#listings" class="btn btn-outline btn-sm">View All →</a>
     </div>
-
-    <div class="info-box">
-      ℹ️ <span>All listed properties are sourced from official bank e-auction portals and DRT notices. Reserve prices shown are indicative. Contact us for full auction documents.</span>
-    </div>
-
+    <div class="info-box">ℹ️ <span>All properties sourced from official bank SARFAESI/DRT notices. Reserve prices are indicative. Contact Raahi Auction for full documents and due diligence support.</span></div>
     <div class="prop-grid">
 
-      <!-- Card 1 -->
       <div class="prop-card">
         <div class="prop-img-wrap">
-          <div class="img-flat img-placeholder">🏠</div>
-          <div class="prop-badge">Bank Auction</div>
-          <div class="prop-fav">♡</div>
+          <div class="img-ph img-flat">🏠</div>
+          <div class="prop-badges"><span class="pb">Bank Auction</span></div>
+          <button class="prop-fav">♡</button>
         </div>
         <div class="prop-body">
           <div class="prop-type">Residential Flat</div>
           <div class="prop-title">2 BHK Flat – Safal Sameep, South Bopal</div>
           <div class="prop-loc">📍 South Bopal, Ahmedabad</div>
+          <div class="prop-id">Auction ID: #797712</div>
           <div class="prop-bank">🏦 <span>SBI</span></div>
-          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-divider"></div>
           <div class="prop-meta">
-            <div>
-              <div class="prop-price-label">Reserve Price</div>
-              <div class="prop-price">₹24,10,000</div>
-            </div>
-            <div class="prop-date">
-              <div class="prop-date-label">Auction Date</div>
-              <div class="prop-date-val">07 Aug 2026</div>
-            </div>
+            <div><div class="prop-pl">Reserve Price</div><div class="prop-price">₹24,10,000</div></div>
+            <div><div class="prop-dl">Auction Date</div><div class="prop-dv">07 Aug 2026</div></div>
           </div>
+          <div class="prop-footer"><span class="prop-time">12:30 PM</span><button class="prop-view">View Details</button></div>
         </div>
       </div>
 
-      <!-- Card 2 -->
       <div class="prop-card">
         <div class="prop-img-wrap">
-          <div class="img-commercial img-placeholder">🏢</div>
-          <div class="prop-badge upcoming">Upcoming</div>
-          <div class="prop-fav">♡</div>
+          <div class="img-ph img-comm">🏢</div>
+          <div class="prop-badges"><span class="pb up">Upcoming</span><span class="pb drt">DRT</span></div>
+          <button class="prop-fav">♡</button>
         </div>
         <div class="prop-body">
           <div class="prop-type">Commercial Shop</div>
-          <div class="prop-title">Ground Floor Shop – B-04, Vastrapur</div>
+          <div class="prop-title">Ground Floor Shop B-04 – Vastrapur</div>
           <div class="prop-loc">📍 Vastrapur, Ahmedabad</div>
+          <div class="prop-id">Auction ID: #748021</div>
           <div class="prop-bank">🏦 <span>DCB Bank</span></div>
-          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-divider"></div>
           <div class="prop-meta">
-            <div>
-              <div class="prop-price-label">Reserve Price</div>
-              <div class="prop-price">₹14,12,000</div>
-            </div>
-            <div class="prop-date">
-              <div class="prop-date-label">Auction Date</div>
-              <div class="prop-date-val">Upcoming</div>
-            </div>
+            <div><div class="prop-pl">Reserve Price</div><div class="prop-price">₹14,12,000</div></div>
+            <div><div class="prop-dl">Auction Date</div><div class="prop-dv">Upcoming</div></div>
           </div>
+          <div class="prop-footer"><span class="prop-time">15.79 Sq.m</span><button class="prop-view">View Details</button></div>
         </div>
       </div>
 
-      <!-- Card 3 -->
       <div class="prop-card">
         <div class="prop-img-wrap">
-          <div class="img-plot img-placeholder">🌿</div>
-          <div class="prop-badge">Bank Auction</div>
-          <div class="prop-fav">♡</div>
+          <div class="img-ph img-plot">🌿</div>
+          <div class="prop-badges"><span class="pb">Bank Auction</span></div>
+          <button class="prop-fav">♡</button>
         </div>
         <div class="prop-body">
           <div class="prop-type">Residential Plot</div>
           <div class="prop-title">Freehold Plot – Valva, Ahmedabad District</div>
           <div class="prop-loc">📍 Valva, Ahmedabad</div>
+          <div class="prop-id">Auction ID: #798042</div>
           <div class="prop-bank">🏦 <span>Bank of Baroda</span></div>
-          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-divider"></div>
           <div class="prop-meta">
-            <div>
-              <div class="prop-price-label">Reserve Price</div>
-              <div class="prop-price">₹4,75,000</div>
-            </div>
-            <div class="prop-date">
-              <div class="prop-date-label">Auction Date</div>
-              <div class="prop-date-val">06 Aug 2026</div>
-            </div>
+            <div><div class="prop-pl">Reserve Price</div><div class="prop-price">₹4,75,000</div></div>
+            <div><div class="prop-dl">Auction Date</div><div class="prop-dv">06 Aug 2026</div></div>
           </div>
+          <div class="prop-footer"><span class="prop-time">02:00 PM</span><button class="prop-view">View Details</button></div>
         </div>
       </div>
 
-      <!-- Card 4 -->
       <div class="prop-card">
         <div class="prop-img-wrap">
-          <div class="img-flat img-placeholder">🏘️</div>
-          <div class="prop-badge">Bank Auction</div>
-          <div class="prop-fav">♡</div>
+          <div class="img-ph img-flat">🏘️</div>
+          <div class="prop-badges"><span class="pb">Bank Auction</span></div>
+          <button class="prop-fav">♡</button>
         </div>
         <div class="prop-body">
           <div class="prop-type">Residential Flat</div>
-          <div class="prop-title">Flat No. A-502 – Saundarya Residency, Chandkheda</div>
+          <div class="prop-title">A-502, 5th Floor – Saundarya Residency, Chandkheda</div>
           <div class="prop-loc">📍 Chandkheda, Ahmedabad</div>
+          <div class="prop-id">Auction ID: #795609</div>
           <div class="prop-bank">🏦 <span>HDFC Bank</span></div>
-          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-divider"></div>
           <div class="prop-meta">
-            <div>
-              <div class="prop-price-label">Reserve Price</div>
-              <div class="prop-price">₹25,55,000</div>
-            </div>
-            <div class="prop-date">
-              <div class="prop-date-label">Auction Date</div>
-              <div class="prop-date-val">04 Aug 2026</div>
-            </div>
+            <div><div class="prop-pl">Reserve Price</div><div class="prop-price">₹25,55,000</div></div>
+            <div><div class="prop-dl">Auction Date</div><div class="prop-dv">04 Aug 2026</div></div>
           </div>
+          <div class="prop-footer"><span class="prop-time">04:30 PM</span><button class="prop-view">View Details</button></div>
         </div>
       </div>
 
-      <!-- Card 5 -->
       <div class="prop-card">
         <div class="prop-img-wrap">
-          <div class="img-land img-placeholder">🌾</div>
-          <div class="prop-badge">Bank Auction</div>
-          <div class="prop-fav">♡</div>
+          <div class="img-ph img-land">🌾</div>
+          <div class="prop-badges"><span class="pb">Bank Auction</span></div>
+          <button class="prop-fav">♡</button>
         </div>
         <div class="prop-body">
           <div class="prop-type">Agricultural Land</div>
           <div class="prop-title">Revenue Land Parcel – Aslali, Ahmedabad</div>
           <div class="prop-loc">📍 Aslali, Ahmedabad</div>
+          <div class="prop-id">Auction ID: #798032</div>
           <div class="prop-bank">🏦 <span>PNB</span></div>
-          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-divider"></div>
           <div class="prop-meta">
-            <div>
-              <div class="prop-price-label">Reserve Price</div>
-              <div class="prop-price">₹4,00,000</div>
-            </div>
-            <div class="prop-date">
-              <div class="prop-date-label">Auction Date</div>
-              <div class="prop-date-val">05 Aug 2026</div>
-            </div>
+            <div><div class="prop-pl">Reserve Price</div><div class="prop-price">₹4,00,000</div></div>
+            <div><div class="prop-dl">Auction Date</div><div class="prop-dv">05 Aug 2026</div></div>
           </div>
+          <div class="prop-footer"><span class="prop-time">12:00 PM</span><button class="prop-view">View Details</button></div>
         </div>
       </div>
 
-      <!-- Card 6 -->
       <div class="prop-card">
         <div class="prop-img-wrap">
-          <div class="img-house img-placeholder">🏡</div>
-          <div class="prop-badge upcoming">Upcoming</div>
-          <div class="prop-fav">♡</div>
+          <div class="img-ph img-house">🏡</div>
+          <div class="prop-badges"><span class="pb up">Upcoming</span></div>
+          <button class="prop-fav">♡</button>
         </div>
         <div class="prop-body">
           <div class="prop-type">Independent House</div>
           <div class="prop-title">D-101, 1st Floor – Swaminarayan Krupa, Bavla</div>
           <div class="prop-loc">📍 Bavla, Ahmedabad</div>
+          <div class="prop-id">Auction ID: #795023</div>
           <div class="prop-bank">🏦 <span>Union Bank</span></div>
-          <div class="prop-divider" style="margin-top:12px;"></div>
+          <div class="prop-divider"></div>
           <div class="prop-meta">
-            <div>
-              <div class="prop-price-label">Reserve Price</div>
-              <div class="prop-price">₹12,55,500</div>
-            </div>
-            <div class="prop-date">
-              <div class="prop-date-label">Auction Date</div>
-              <div class="prop-date-val">Upcoming</div>
-            </div>
+            <div><div class="prop-pl">Reserve Price</div><div class="prop-price">₹12,55,500</div></div>
+            <div><div class="prop-dl">Auction Date</div><div class="prop-dv">Upcoming</div></div>
           </div>
+          <div class="prop-footer"><span class="prop-time">TBC</span><button class="prop-view">View Details</button></div>
         </div>
       </div>
 
     </div>
-
     <div class="pagination">
+      <button class="page-btn wide">‹ Prev</button>
       <button class="page-btn active">1</button>
       <button class="page-btn">2</button>
       <button class="page-btn">3</button>
@@ -821,275 +624,124 @@
       <button class="page-btn">5</button>
       <button class="page-btn">…</button>
       <button class="page-btn">183</button>
-      <button class="page-btn" style="width:auto; padding:0 14px;">Next →</button>
+      <button class="page-btn">184</button>
+      <button class="page-btn wide">Next ›</button>
     </div>
   </div>
 </section>
 
-<!-- STATS STRIP -->
+<!-- STATS -->
 <div class="stats-strip">
-  <div class="stats-strip-inner">
-    <div class="strip-stat"><strong>₹500Cr+</strong><span>Value Disposed</span></div>
-    <div class="strip-stat"><strong>2,400+</strong><span>Properties Listed</span></div>
-    <div class="strip-stat"><strong>40+</strong><span>Banking Partners</span></div>
-    <div class="strip-stat"><strong>10,000+</strong><span>Registered Buyers</span></div>
-    <div class="strip-stat"><strong>8 Years</strong><span>of Trust</span></div>
+  <div class="ss-inner">
+    <div class="ss-stat"><strong>₹500Cr+</strong><span>Value Disposed</span></div>
+    <div class="ss-stat"><strong>2,400+</strong><span>Active Listings</span></div>
+    <div class="ss-stat"><strong>40+</strong><span>Bank Partners</span></div>
+    <div class="ss-stat"><strong>10,000+</strong><span>Registered Buyers</span></div>
+    <div class="ss-stat"><strong>8 Years</strong><span>of Trust</span></div>
   </div>
 </div>
 
 <!-- HOW IT WORKS -->
-<section class="section" id="how" style="background: white;">
-  <div class="section-inner">
-    <div class="section-header" style="text-align:center; max-width: 520px; margin: 0 auto 40px;">
+<section class="section" id="how" style="background:white">
+  <div class="s-inner">
+    <div class="s-head" style="text-align:center;max-width:490px;margin:0 auto 28px">
       <h2>How Raahi Auction Works</h2>
-      <p>Buying a bank auction property has never been this simple. We guide you from search to sale.</p>
+      <p>From discovery to acquisition — we guide you every step of the way</p>
     </div>
     <div class="steps">
-      <div class="step-card">
-        <div class="step-num">1</div>
-        <h3>Register &amp; Browse</h3>
-        <p>Create a free account and browse verified bank auction listings across Ahmedabad and Gujarat.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
-        <h3>Shortlist Properties</h3>
-        <p>Filter by type, price, bank and auction date. Bookmark favourites and get instant alerts.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
-        <h3>Due Diligence Support</h3>
-        <p>Our team assists with title verification, encumbrance checks, and document review before you bid.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">4</div>
-        <h3>Bid &amp; Win</h3>
-        <p>Participate in the bank's e-auction portal with confidence. We assist with EMD submission and paperwork.</p>
-      </div>
+      <div class="step-card"><div class="step-num">1</div><h3>Register &amp; Browse</h3><p>Create a free account and browse verified bank auction listings across Gujarat — filtered by city, type and bank.</p></div>
+      <div class="step-card"><div class="step-num">2</div><h3>Shortlist Properties</h3><p>Save favourites and get instant WhatsApp/email alerts when matching auctions are posted.</p></div>
+      <div class="step-card"><div class="step-num">3</div><h3>Due Diligence Support</h3><p>Our experts assist with title verification, encumbrance checks, possession status and document review.</p></div>
+      <div class="step-card"><div class="step-num">4</div><h3>Bid &amp; Win</h3><p>Participate with confidence in official bank e-auctions. We help with EMD, bid strategy and post-auction paperwork.</p></div>
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="section" id="services" style="background: var(--bg);">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2>Our Services</h2>
-      <p>Comprehensive asset disposal and recovery solutions for banks, institutions and investors</p>
-    </div>
-    <div class="services-grid">
-      <div class="svc-card">
-        <div class="svc-icon">🏦</div>
-        <h3>Bank Auction Property Listings</h3>
-        <p>Verified NPA properties from 40+ scheduled banks across Gujarat — residential, commercial, industrial and land.</p>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon">📋</div>
-        <h3>Debt Collection &amp; Recovery</h3>
-        <p>SARFAESI-compliant debt recovery and collection management services for banks and financial institutions.</p>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon">🔑</div>
-        <h3>Asset Disposal Management</h3>
-        <p>End-to-end disposal of movable and immovable assets including vehicles, machinery and property portfolios.</p>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon">📊</div>
-        <h3>NPA Portfolio Assignment</h3>
-        <p>Strategic NPA portfolio sourcing, evaluation and assignment to qualified ARC platforms and investor networks.</p>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon">🛡️</div>
-        <h3>Enforcement Agent Services</h3>
-        <p>Licensed enforcement agents for physical possession, custody and secure storage of seized assets across Gujarat and Maharashtra.</p>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon">🤝</div>
-        <h3>Buyer Advisory</h3>
-        <p>One-on-one advisory for buyers — title checks, legal guidance, bank negotiation, and post-auction documentation support.</p>
-      </div>
+<section class="section" id="services">
+  <div class="s-inner">
+    <div class="s-head"><h2>Our Services</h2><p>Comprehensive NPA resolution and asset disposal services for banks, institutions and investors across Gujarat &amp; Maharashtra</p></div>
+    <div class="svc-grid">
+      <div class="svc-card"><div class="svc-icon">🏦</div><h3>Bank Auction Property Listings</h3><p>Verified NPA properties from 40+ scheduled banks — residential, commercial, industrial and land — across Gujarat.</p></div>
+      <div class="svc-card"><div class="svc-icon">📋</div><h3>Debt Collection &amp; Recovery</h3><p>SARFAESI-compliant debt recovery and collection management for banks and NBFCs across Gujarat and Maharashtra.</p></div>
+      <div class="svc-card"><div class="svc-icon">🔑</div><h3>Asset Disposal Management</h3><p>End-to-end disposal of movable and immovable assets including vehicles, machinery and full property portfolios.</p></div>
+      <div class="svc-card"><div class="svc-icon">📊</div><h3>NPA Portfolio Assignment</h3><p>Strategic NPA portfolio sourcing, evaluation and assignment to ARCs, HFCs and qualified investor networks.</p></div>
+      <div class="svc-card"><div class="svc-icon">🛡️</div><h3>Enforcement Agent Services</h3><p>Licensed possession agents for physical asset custody and secure storage across Gujarat and Maharashtra.</p></div>
+      <div class="svc-card"><div class="svc-icon">🤝</div><h3>Buyer Advisory</h3><p>One-on-one advisory for buyers — title checks, legal guidance, bank negotiation and post-auction documentation.</p></div>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="section" style="background: white;">
-  <div class="section-inner">
-    <div class="section-header" style="text-align:center; max-width: 480px; margin: 0 auto 36px;">
-      <h2>What Our Clients Say</h2>
-      <p>Rated 4.8/5 by over 50 verified clients on Justdial</p>
-    </div>
+<section class="section" style="background:white">
+  <div class="s-inner">
+    <div class="s-head" style="text-align:center;max-width:440px;margin:0 auto 26px"><h2>What Our Clients Say</h2><p>Rated 4.8 / 5 by 50+ verified clients on Justdial</p></div>
     <div class="testi-grid">
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p>"Raahi Auction helped me navigate my first bank auction with complete ease. They handled all the paperwork and kept me informed at every step."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">RK</div>
-          <div>
-            <div class="testi-name">Rajesh Kharadi</div>
-            <div class="testi-loc">Investor, Ahmedabad</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p>"Professional team with deep knowledge of SARFAESI. They found a buyer for our NPA portfolio within 3 weeks. Excellent service and very transparent."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">PM</div>
-          <div>
-            <div class="testi-name">Priya Mehta</div>
-            <div class="testi-loc">Branch Manager, Gandhinagar</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card">
-        <div class="stars">★★★★☆</div>
-        <p>"Got a flat in Chandkheda 18% below market rate through their auction listing. The due diligence support they provided saved me from a major headache."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">SA</div>
-          <div>
-            <div class="testi-name">Sanjay Agarwal</div>
-            <div class="testi-loc">First-time Buyer, Surat</div>
-          </div>
-        </div>
-      </div>
+      <div class="testi-card"><div class="stars">★★★★★</div><p>"Raahi Auction guided me through my first bank auction from start to finish. All paperwork handled professionally — got the flat 18% below market rate!"</p><div class="testi-author"><div class="testi-av">RK</div><div><div class="testi-name">Rajesh Kharadi</div><div class="testi-loc">Investor, Ahmedabad</div></div></div></div>
+      <div class="testi-card"><div class="stars">★★★★★</div><p>"As a bank branch manager, working with Raahi is a pleasure. Found a buyer for our NPA portfolio in 3 weeks. Transparent and fully SARFAESI-compliant."</p><div class="testi-author"><div class="testi-av">PM</div><div><div class="testi-name">Priya Mehta</div><div class="testi-loc">Branch Manager, Gandhinagar</div></div></div></div>
+      <div class="testi-card"><div class="stars">★★★★☆</div><p>"Due diligence support saved me from a problematic title. Great team — they know every detail of the SARFAESI process inside out."</p><div class="testi-author"><div class="testi-av">SA</div><div><div class="testi-name">Sanjay Agarwal</div><div class="testi-loc">First-time Buyer, Surat</div></div></div></div>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="section" id="about" style="background: var(--bg);">
-  <div class="section-inner">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: center;">
+<section class="section" id="about">
+  <div class="s-inner">
+    <div class="about-grid">
       <div>
-        <span class="tag" style="margin-bottom: 16px; display: inline-block;">About Raahi Auction</span>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(22px, 3vw, 30px); font-weight: 700; margin-bottom: 16px;">Gujarat's Leading NPA &amp; Bank Auction Specialists</h2>
-        <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 14px; line-height: 1.75;">
-          Raahi Auction Services India Pvt. Ltd. was founded in 2018 in Ahmedabad. We are a professionally managed debt collection and asset disposal agency with 8+ years of hands-on experience in bank auction properties, NPA portfolio management and recovery services across Gujarat and Maharashtra.
-        </p>
-        <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 24px; line-height: 1.75;">
-          Our team of Enforcement Agents, legal advisors and property specialists works closely with 40+ scheduled banks, ARCs, NBFCs and institutional clients to ensure transparent, compliant and efficient asset monetisation.
-        </p>
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="#contact" class="btn btn-solid" style="padding: 10px 24px;">Get in Touch</a>
-          <a href="#services" class="btn btn-outline" style="padding: 10px 24px;">Our Services</a>
+        <div class="tag-pill">About Raahi Auction</div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,3vw,27px);font-weight:700;margin-bottom:13px;color:var(--navy)">Gujarat's Leading NPA &amp; Bank Auction Specialists</h2>
+        <p style="color:var(--text-muted);font-size:13.5px;margin-bottom:11px;line-height:1.8">Founded in 2018 in Ahmedabad, Raahi Auction Services India Pvt. Ltd. is a professionally managed debt collection and asset disposal agency with 8+ years of experience in bank auction properties, NPA portfolio management and enforcement services across Gujarat and Maharashtra.</p>
+        <p style="color:var(--text-muted);font-size:13.5px;margin-bottom:22px;line-height:1.8">Our team of Enforcement Agents, legal advisors and property specialists works closely with 40+ scheduled banks, ARCs and NBFCs to ensure transparent, compliant and efficient asset monetisation. Head office in Ahmedabad, branch in Colaba, Mumbai.</p>
+        <div style="display:flex;gap:9px;flex-wrap:wrap">
+          <a href="#contact" class="btn btn-solid">Get in Touch</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
         </div>
       </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
-        <div style="background: white; border-radius: var(--radius); border: 1px solid var(--border); padding: 22px; text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; color: var(--red);">2018</div>
-          <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Year Established</div>
-        </div>
-        <div style="background: white; border-radius: var(--radius); border: 1px solid var(--border); padding: 22px; text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; color: var(--red);">40+</div>
-          <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Bank Partners</div>
-        </div>
-        <div style="background: var(--red); border-radius: var(--radius); padding: 22px; text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; color: white;">2</div>
-          <div style="font-size: 13px; color: rgba(255,255,255,0.75); margin-top: 4px;">Offices (Ahmedabad &amp; Mumbai)</div>
-        </div>
-        <div style="background: white; border-radius: var(--radius); border: 1px solid var(--border); padding: 22px; text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; color: var(--red);">4.8★</div>
-          <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Client Rating</div>
-        </div>
+      <div class="about-mini">
+        <div class="amc"><strong>2018</strong><span>Year Established</span></div>
+        <div class="amc"><strong>40+</strong><span>Bank Partners</span></div>
+        <div class="amc red"><strong style="color:white">2</strong><span>Offices (AMD &amp; MUM)</span></div>
+        <div class="amc"><strong>4.8★</strong><span>Client Rating</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA BANNER -->
+<!-- CTA -->
 <section class="cta-banner">
   <h2>Looking for a Specific Property?</h2>
   <p>Tell us your requirement and our team will personally match you with the right bank auction opportunities.</p>
-  <div class="cta-actions">
-    <a href="#contact" class="btn btn-gold" style="padding: 13px 30px; font-size: 15px;">Send Your Requirement</a>
-    <a href="tel:+918488848874" class="btn btn-outline" style="padding: 13px 30px; font-size: 15px; border-color: rgba(255,255,255,0.35); color: white;">
-      📞 Call +91 84888 48874
-    </a>
+  <div class="cta-acts">
+    <a href="#contact" class="btn btn-gold btn-lg">Send Your Requirement</a>
+    <a href="tel:+918488848874" class="btn btn-lg" style="border:1.5px solid rgba(255,255,255,.28);color:white;background:rgba(255,255,255,.07)">📞 +91 84888 48874</a>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section" id="contact" style="background: white;">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2>Contact Us</h2>
-      <p>Get in touch with our team in Ahmedabad or Mumbai</p>
-    </div>
+<section class="section" id="contact" style="background:white">
+  <div class="s-inner">
+    <div class="s-head"><h2>Contact Us</h2><p>Get in touch with our Ahmedabad or Mumbai team</p></div>
     <div class="contact-grid">
-      <div class="contact-info">
+      <div class="ci">
         <h3>Reach Our Team</h3>
-        <div class="contact-row">
-          <div class="contact-ic">📍</div>
-          <div>
-            <strong>Ahmedabad Office (Head Office)</strong>
-            <span>A/701, 7th Floor, B.G. Tower, Outside Delhi Darwaja Gate, Madhupura, Ahmedabad – 380004, Gujarat</span>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-ic">📍</div>
-          <div>
-            <strong>Mumbai Office</strong>
-            <span>Colaba, Mumbai, Maharashtra</span>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-ic">📞</div>
-          <div>
-            <strong>Phone / WhatsApp</strong>
-            <span>+91 84888 48874 &nbsp;|&nbsp; +91 99983 02771</span>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-ic">✉️</div>
-          <div>
-            <strong>Email</strong>
-            <span>raahiauc@gmail.com &nbsp;|&nbsp; neelesh@raahiauction.com</span>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-ic">🌐</div>
-          <div>
-            <strong>Website</strong>
-            <span>raahiauction.com</span>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-ic">🕐</div>
-          <div>
-            <strong>Office Hours</strong>
-            <span>Monday – Saturday: 10:30 AM – 6:30 PM</span>
-          </div>
-        </div>
+        <div class="cr"><div class="cr-ic">📍</div><div><strong>Ahmedabad Head Office</strong><span>A/701, 7th Floor, B.G. Tower, Outside Delhi Darwaja Gate, Madhupura, Ahmedabad – 380004, Gujarat</span></div></div>
+        <div class="cr"><div class="cr-ic">📍</div><div><strong>Mumbai Office</strong><span>Colaba, Mumbai, Maharashtra</span></div></div>
+        <div class="cr"><div class="cr-ic">📞</div><div><strong>Phone / WhatsApp</strong><span>+91 84888 48874 &nbsp;|&nbsp; +91 99983 02771 &nbsp;|&nbsp; +91 84888 48820</span></div></div>
+        <div class="cr"><div class="cr-ic">✉️</div><div><strong>Email</strong><span>raahiauc@gmail.com &nbsp;|&nbsp; neelesh@raahiauction.com</span></div></div>
+        <div class="cr"><div class="cr-ic">🌐</div><div><strong>Website</strong><span>raahiauction.com</span></div></div>
+        <div class="cr"><div class="cr-ic">🕐</div><div><strong>Office Hours</strong><span>Monday – Saturday: 10:30 AM – 6:30 PM</span></div></div>
       </div>
-      <div class="contact-form">
+      <div class="cf">
         <h3>Send an Enquiry</h3>
-        <div class="form-group">
-          <label>Full Name</label>
-          <input type="text" placeholder="Your full name">
+        <div class="fr">
+          <div class="fg"><label>Full Name</label><input type="text" placeholder="Your full name"></div>
+          <div class="fg"><label>Phone / WhatsApp</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
         </div>
-        <div class="form-group">
-          <label>Phone / WhatsApp</label>
-          <input type="tel" placeholder="+91 XXXXX XXXXX">
-        </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="your@email.com">
-        </div>
-        <div class="form-group">
-          <label>Enquiry Type</label>
-          <select>
-            <option>I want to buy a property</option>
-            <option>I represent a bank / FI</option>
-            <option>NPA Portfolio Assignment</option>
-            <option>Debt Collection Services</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea placeholder="Tell us your requirement — budget, location preference, property type…"></textarea>
-        </div>
-        <button class="btn btn-solid" style="width: 100%; padding: 11px; font-size: 15px;">Submit Enquiry</button>
+        <div class="fg"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
+        <div class="fg"><label>Enquiry Type</label><select><option>I want to buy a property</option><option>I represent a bank / FI</option><option>NPA Portfolio Assignment</option><option>Debt Collection Services</option><option>Other</option></select></div>
+        <div class="fg"><label>Message</label><textarea placeholder="Tell us your requirement — budget, location, property type…"></textarea></div>
+        <button class="btn btn-solid" style="width:100%;padding:11px;font-size:14.5px">Submit Enquiry</button>
       </div>
     </div>
   </div>
@@ -1099,70 +751,403 @@
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-brand">
-      <div class="footer-logo">
-        <div class="footer-logo-icon">RA</div>
+      <div class="fl">
+        <img src="data:image/jpeg;base64,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" alt="Raahi Auction">
         <strong>RAAHI AUCTION</strong>
       </div>
-      <p>Raahi Auction Services India Pvt. Ltd. — Gujarat's most trusted bank auction property platform. Serving banks, investors and buyers since 2018 across Ahmedabad, Surat, Baroda and Mumbai.</p>
+      <p>Raahi Auction Services India Pvt. Ltd. — Gujarat's most trusted bank auction platform. Serving banks, investors and buyers since 2018 across Ahmedabad, Surat, Baroda and Mumbai.</p>
+      <div class="footer-socials">
+        <div class="si">f</div><div class="si">in</div><div class="si">W</div><div class="si">ig</div><div class="si">▶</div>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Quick Links</h4>
-      <a href="#">Home</a>
-      <a href="#listings">All Listings</a>
-      <a href="#services">Services</a>
-      <a href="#how">How It Works</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
+      <a href="#">Home</a><a href="#listings">All Listings</a><a href="#services">Services</a>
+      <a href="#how">How It Works</a><a href="#about">About Us</a><a href="#contact">Contact</a>
     </div>
     <div class="footer-col">
       <h4>Property Types</h4>
-      <a href="#">Residential Flats</a>
-      <a href="#">Plots &amp; Land</a>
-      <a href="#">Commercial Shops</a>
-      <a href="#">Industrial</a>
-      <a href="#">Vehicles</a>
-      <a href="#">Bungalows</a>
+      <a href="#">Residential Flats</a><a href="#">Plots &amp; Land</a><a href="#">Commercial Shops</a>
+      <a href="#">Industrial Assets</a><a href="#">Vehicles</a><a href="#">Bungalows</a>
     </div>
     <div class="footer-col">
       <h4>Legal</h4>
-      <a href="#">Terms &amp; Conditions</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Disclaimer</a>
-      <a href="#">SARFAESI Act Info</a>
-      <a href="#">FAQs</a>
+      <a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a><a href="#">Disclaimer</a>
+      <a href="#">SARFAESI Act Info</a><a href="#">FAQs</a><a href="#">Blog</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 Raahi Auction Services India Pvt. Ltd. · CIN: U70200GJ2018PTC101624 · All rights reserved.</span>
-    <div class="footer-socials">
-      <div class="social-ic" title="Facebook">f</div>
-      <div class="social-ic" title="LinkedIn">in</div>
-      <div class="social-ic" title="WhatsApp">W</div>
-      <div class="social-ic" title="Instagram">ig</div>
+    <div>
+      <div>© 2026 Raahi Auction Services India Pvt. Ltd. · All rights reserved.</div>
+      <div class="footer-cin">CIN: U70200GJ2018PTC101624 · A/701, B.G. Tower, Madhupura, Ahmedabad – 380004 · UDYAM-GJ-01-0041057</div>
     </div>
+    <div style="font-size:11px;color:rgba(255,255,255,.3)">Made with ❤️ in Ahmedabad</div>
   </div>
 </footer>
 
+<!-- ════════════════════════════════════════════════════
+     ADMIN PANEL MODAL
+════════════════════════════════════════════════════ -->
+<div class="admin-overlay" id="adminOverlay">
+  <div class="admin-modal">
+    <div class="am-header">
+      <h2>
+        <img src="data:image/jpeg;base64,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" alt="">
+        Raahi Auction — Admin Panel
+        <span class="admin-badge">v2.0</span>
+      </h2>
+      <button class="am-close" onclick="closeAdmin()">✕</button>
+    </div>
+    <div class="am-body">
+      <!-- Sidebar -->
+      <div class="am-sidebar">
+        <h5>Overview</h5>
+        <button class="ani active" onclick="showTab('dashboard',this)"><span class="ic">📊</span> Dashboard</button>
+        <button class="ani" onclick="showTab('analytics',this)"><span class="ic">📈</span> Analytics</button>
+        <h5>Listings</h5>
+        <button class="ani" onclick="showTab('properties',this)"><span class="ic">🏠</span> All Properties <span class="bc">2198</span></button>
+        <button class="ani" onclick="showTab('addprop',this)"><span class="ic">➕</span> Add Property</button>
+        <button class="ani" onclick="showTab('upcoming',this)"><span class="ic">🔔</span> Upcoming Auctions <span class="bc">83</span></button>
+        <h5>Enquiries</h5>
+        <button class="ani" onclick="showTab('enquiries',this)"><span class="ic">📩</span> Enquiries <span class="bc">12</span></button>
+        <button class="ani" onclick="showTab('buyers',this)"><span class="ic">👥</span> Registered Buyers</button>
+        <h5>Content</h5>
+        <button class="ani" onclick="showTab('banks',this)"><span class="ic">🏦</span> Bank Partners</button>
+        <button class="ani" onclick="showTab('blog',this)"><span class="ic">📝</span> Blog / News</button>
+        <h5>Settings</h5>
+        <button class="ani" onclick="showTab('settings',this)"><span class="ic">⚙️</span> Site Settings</button>
+      </div>
+
+      <!-- Content -->
+      <div class="am-content">
+
+        <!-- DASHBOARD -->
+        <div class="atab active" id="tab-dashboard">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <div><h3 style="font-size:14.5px;font-weight:700;color:var(--navy)">Dashboard Overview</h3><p style="font-size:11.5px;color:var(--text-muted)">Friday, 27 June 2026 · Last 30 days</p></div>
+            <button class="btn btn-solid btn-sm" onclick="showTab('addprop',document.querySelector('[onclick*=addprop]'))">+ Add Listing</button>
+          </div>
+          <div class="a-stats">
+            <div class="asc red"><div class="asc-lbl">Total Listings</div><div class="asc-val">2,198</div><div class="asc-sub">Active on portal</div><span class="asc-trend up">+28 today</span></div>
+            <div class="asc green"><div class="asc-lbl">New Enquiries</div><div class="asc-val">12</div><div class="asc-sub">Awaiting response</div><span class="asc-trend up">+3 today</span></div>
+            <div class="asc blue"><div class="asc-lbl">Registered Buyers</div><div class="asc-val">10,284</div><div class="asc-sub">Total accounts</div><span class="asc-trend up">+47 week</span></div>
+            <div class="asc gold"><div class="asc-lbl">Auctions Today</div><div class="asc-val">14</div><div class="asc-sub">Live / scheduled</div><span class="asc-trend up">Active</span></div>
+          </div>
+          <div class="cw">
+            <div class="cw-hd"><div class="cw-title">New Listings — This Week</div><span style="font-size:11px;color:var(--text-muted)">Mon–Sun</span></div>
+            <div class="mc" style="height:60px;margin-bottom:18px">
+              <div class="mb" style="height:42%"><div class="mb-l">Mon</div></div>
+              <div class="mb" style="height:65%"><div class="mb-l">Tue</div></div>
+              <div class="mb" style="height:55%"><div class="mb-l">Wed</div></div>
+              <div class="mb" style="height:80%"><div class="mb-l">Thu</div></div>
+              <div class="mb" style="height:70%"><div class="mb-l">Fri</div></div>
+              <div class="mb hl" style="height:92%"><div class="mb-l">Sat</div></div>
+              <div class="mb" style="height:28%"><div class="mb-l">Sun</div></div>
+            </div>
+          </div>
+          <div class="atw">
+            <div class="ath"><h4>Recent Listings</h4><div class="ath-r"><button class="btn btn-outline btn-sm">Export CSV</button></div></div>
+            <table class="at">
+              <thead><tr><th>Auction ID</th><th>Type</th><th>Location</th><th>Bank</th><th>Reserve Price</th><th>Auction Date</th><th>Status</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr><td>#797712</td><td>2 BHK Flat</td><td>South Bopal</td><td>SBI</td><td>₹24,10,000</td><td>07 Aug 2026</td><td><span class="ab live">Live</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td>#748021</td><td>Comm. Shop</td><td>Vastrapur</td><td>DCB Bank</td><td>₹14,12,000</td><td>Upcoming</td><td><span class="ab up">Upcoming</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td>#798042</td><td>Plot</td><td>Valva</td><td>Bank of Baroda</td><td>₹4,75,000</td><td>06 Aug 2026</td><td><span class="ab live">Live</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td>#795609</td><td>Flat</td><td>Chandkheda</td><td>HDFC Bank</td><td>₹25,55,000</td><td>04 Aug 2026</td><td><span class="ab live">Live</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td>#798032</td><td>Land</td><td>Aslali</td><td>PNB</td><td>₹4,00,000</td><td>05 Aug 2026</td><td><span class="ab up">Upcoming</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td>#795023</td><td>House</td><td>Bavla</td><td>Union Bank</td><td>₹12,55,500</td><td>TBC</td><td><span class="ab up">Upcoming</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ANALYTICS -->
+        <div class="atab" id="tab-analytics">
+          <h3 style="font-size:14.5px;font-weight:700;color:var(--navy);margin-bottom:14px">Analytics &amp; Reports</h3>
+          <div class="a-stats">
+            <div class="asc red"><div class="asc-lbl">Page Views (30d)</div><div class="asc-val">48,291</div><span class="asc-trend up">+12%</span></div>
+            <div class="asc green"><div class="asc-lbl">Enquiry Conv. Rate</div><div class="asc-val">3.2%</div><span class="asc-trend up">+0.4%</span></div>
+            <div class="asc blue"><div class="asc-lbl">Avg. Session</div><div class="asc-val">4:32</div><span class="asc-trend up">+0:18</span></div>
+            <div class="asc gold"><div class="asc-lbl">WhatsApp Clicks</div><div class="asc-val">1,847</div><span class="asc-trend up">+8%</span></div>
+          </div>
+          <div class="cw">
+            <div class="cw-hd"><div class="cw-title">Monthly Listings Volume (2026)</div></div>
+            <div class="mc" style="height:65px;margin-bottom:18px">
+              <div class="mb" style="height:38%"><div class="mb-l">Jan</div></div>
+              <div class="mb" style="height:52%"><div class="mb-l">Feb</div></div>
+              <div class="mb" style="height:48%"><div class="mb-l">Mar</div></div>
+              <div class="mb" style="height:68%"><div class="mb-l">Apr</div></div>
+              <div class="mb" style="height:63%"><div class="mb-l">May</div></div>
+              <div class="mb hl" style="height:90%"><div class="mb-l">Jun</div></div>
+            </div>
+          </div>
+          <div class="atw">
+            <div class="ath"><h4>Top Performing Property Types</h4></div>
+            <table class="at">
+              <thead><tr><th>Property Type</th><th>Total Listings</th><th>Enquiries</th><th>Conversion</th><th>Avg. Price</th></tr></thead>
+              <tbody>
+                <tr><td>Residential Flat</td><td>840</td><td>4,220</td><td>4.1%</td><td>₹28,40,000</td></tr>
+                <tr><td>Plot / Land</td><td>610</td><td>2,850</td><td>3.8%</td><td>₹8,20,000</td></tr>
+                <tr><td>Commercial Shop</td><td>290</td><td>1,960</td><td>5.2%</td><td>₹22,00,000</td></tr>
+                <tr><td>Vehicles</td><td>180</td><td>980</td><td>2.9%</td><td>₹3,40,000</td></tr>
+                <tr><td>Industrial</td><td>68</td><td>520</td><td>6.1%</td><td>₹84,00,000</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ALL PROPERTIES -->
+        <div class="atab" id="tab-properties">
+          <div class="atw">
+            <div class="ath">
+              <h4>All Properties (2,198)</h4>
+              <div class="ath-r">
+                <input class="a-si" placeholder="Search listings…">
+                <select style="padding:5px 8px;border:1.5px solid var(--border);border-radius:6px;font-size:12px;outline:none"><option>All Types</option><option>Flat</option><option>Plot</option><option>Commercial</option><option>Vehicle</option></select>
+                <button class="btn btn-solid btn-sm" onclick="showTab('addprop',document.querySelector('[onclick*=addprop]'))">+ Add New</button>
+              </div>
+            </div>
+            <table class="at">
+              <thead><tr><th><input type="checkbox"></th><th>ID</th><th>Type</th><th>Title</th><th>City</th><th>Bank</th><th>Reserve Price</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr><td><input type="checkbox"></td><td>#797712</td><td>Flat</td><td>2 BHK Flat, South Bopal</td><td>Ahmedabad</td><td>SBI</td><td>₹24,10,000</td><td>07 Aug 2026</td><td><span class="ab live">Live</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td><input type="checkbox"></td><td>#748021</td><td>Shop</td><td>Ground Floor Shop, Vastrapur</td><td>Ahmedabad</td><td>DCB</td><td>₹14,12,000</td><td>Upcoming</td><td><span class="ab up">Upcoming</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td><input type="checkbox"></td><td>#798042</td><td>Plot</td><td>Freehold Plot, Valva</td><td>Ahmedabad</td><td>BoB</td><td>₹4,75,000</td><td>06 Aug 2026</td><td><span class="ab live">Live</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td><input type="checkbox"></td><td>#795609</td><td>Flat</td><td>A-502 Saundarya, Chandkheda</td><td>Ahmedabad</td><td>HDFC</td><td>₹25,55,000</td><td>04 Aug 2026</td><td><span class="ab live">Live</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td><input type="checkbox"></td><td>#795023</td><td>House</td><td>D-101 Swaminarayan, Bavla</td><td>Ahmedabad</td><td>Union Bank</td><td>₹12,55,500</td><td>TBC</td><td><span class="ab up">Upcoming</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td><input type="checkbox"></td><td>#798032</td><td>Land</td><td>Revenue Land, Aslali</td><td>Ahmedabad</td><td>PNB</td><td>₹4,00,000</td><td>05 Aug 2026</td><td><span class="ab up">Upcoming</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ADD PROPERTY -->
+        <div class="atab" id="tab-addprop">
+          <h3 style="font-size:14.5px;font-weight:700;color:var(--navy);margin-bottom:14px">Add New Auction Listing</h3>
+          <div class="a-frm">
+            <div class="a-stitle">Property Details</div>
+            <div class="afg2">
+              <div class="afg"><label>Auction ID</label><input type="text" placeholder="e.g. #798999"></div>
+              <div class="afg"><label>Property Type</label><select><option>Residential Flat</option><option>Plot / Land</option><option>Commercial Shop</option><option>Independent House</option><option>Vehicle</option><option>Industrial</option></select></div>
+              <div class="afg"><label>Title / Name</label><input type="text" placeholder="e.g. 2 BHK Flat, XYZ Society"></div>
+              <div class="afg"><label>Bank / FI Name</label><select><option>SBI</option><option>HDFC Bank</option><option>ICICI Bank</option><option>Bank of Baroda</option><option>PNB</option><option>Union Bank</option><option>Axis Bank</option><option>DCB Bank</option><option>Canara Bank</option></select></div>
+            </div>
+            <div class="afg"><label>Full Property Description</label><textarea placeholder="Complete description of the secured asset as per bank notice…"></textarea></div>
+            <div class="a-stitle">Location</div>
+            <div class="afg2">
+              <div class="afg"><label>Area / Locality</label><input type="text" placeholder="e.g. South Bopal"></div>
+              <div class="afg"><label>City</label><select><option>Ahmedabad</option><option>Surat</option><option>Baroda</option><option>Gandhinagar</option><option>Rajkot</option><option>Mumbai</option></select></div>
+              <div class="afg"><label>Pincode</label><input type="text" placeholder="380054"></div>
+              <div class="afg"><label>Survey / TPS No.</label><input type="text" placeholder="Survey No."></div>
+            </div>
+            <div class="a-stitle">Auction Details</div>
+            <div class="afg2">
+              <div class="afg"><label>Reserve Price (₹)</label><input type="text" placeholder="e.g. 2410000"></div>
+              <div class="afg"><label>EMD Amount (₹)</label><input type="text" placeholder="e.g. 241000"></div>
+              <div class="afg"><label>Auction Date</label><input type="date"></div>
+              <div class="afg"><label>Auction Time</label><input type="time"></div>
+              <div class="afg"><label>Status</label><select><option>Upcoming</option><option>Live</option><option>Sold</option><option>Withdrawn</option></select></div>
+              <div class="afg"><label>Auction Type</label><select><option>SARFAESI e-Auction</option><option>DRT Auction</option><option>Court Auction</option><option>Voluntary Sale</option></select></div>
+            </div>
+            <div class="a-stitle">Images &amp; Documents</div>
+            <div class="upload-zone"><span style="font-size:22px">📁</span><p>Drag &amp; drop property images here, or click to select</p><p style="font-size:11px;margin-top:3px">JPG, PNG or WebP · Max 5MB each · Up to 10 images</p></div>
+            <div class="upload-zone" style="margin-top:8px"><span style="font-size:22px">📄</span><p>Upload auction notice, title doc, encumbrance certificate</p><p style="font-size:11px;margin-top:3px">PDF only · Max 10MB per file</p></div>
+            <div class="a-acts"><button class="btn btn-outline">Save Draft</button><button class="btn btn-solid">Publish Listing</button></div>
+          </div>
+        </div>
+
+        <!-- UPCOMING -->
+        <div class="atab" id="tab-upcoming">
+          <h3 style="font-size:14.5px;font-weight:700;color:var(--navy);margin-bottom:14px">Upcoming Auctions — Next 30 Days</h3>
+          <div class="atw">
+            <div class="ath"><h4>83 Auctions Scheduled</h4><div class="ath-r"><button class="btn btn-outline btn-sm">Send Alerts</button><button class="btn btn-solid btn-sm">Export</button></div></div>
+            <table class="at">
+              <thead><tr><th>Date &amp; Time</th><th>Auction ID</th><th>Property</th><th>Bank</th><th>Reserve Price</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr><td><strong>04 Aug</strong> 04:30 PM</td><td>#795609</td><td>Flat – Chandkheda</td><td>HDFC Bank</td><td>₹25,55,000</td><td><button class="aib">✏️</button></td></tr>
+                <tr><td><strong>04 Aug</strong> 02:00 PM</td><td>#795608</td><td>Flat – Narol</td><td>ICICI Bank</td><td>₹3,00,000</td><td><button class="aib">✏️</button></td></tr>
+                <tr><td><strong>05 Aug</strong> 12:00 PM</td><td>#798032</td><td>Land – Aslali</td><td>PNB</td><td>₹4,00,000</td><td><button class="aib">✏️</button></td></tr>
+                <tr><td><strong>06 Aug</strong> 02:00 PM</td><td>#798042</td><td>Plot – Valva</td><td>Bank of Baroda</td><td>₹4,75,000</td><td><button class="aib">✏️</button></td></tr>
+                <tr><td><strong>07 Aug</strong> 12:30 PM</td><td>#797712</td><td>Flat – South Bopal</td><td>SBI</td><td>₹24,10,000</td><td><button class="aib">✏️</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ENQUIRIES -->
+        <div class="atab" id="tab-enquiries">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <h3 style="font-size:14.5px;font-weight:700;color:var(--navy)">Enquiries — 12 New</h3>
+            <select style="padding:5px 9px;border:1.5px solid var(--border);border-radius:6px;font-size:12px;outline:none"><option>All Types</option><option>Buy Enquiry</option><option>Bank / FI</option><option>NPA Assignment</option></select>
+          </div>
+          <div class="enq-card">
+            <div class="enq-av">RK</div>
+            <div class="enq-body">
+              <div class="enq-top"><div class="enq-name">Rajesh Kharadi</div><div class="enq-time">Today 10:42 AM</div></div>
+              <div class="enq-msg">Interested in 2 BHK flats in Chandkheda or South Bopal under ₹30L. Please share latest listings and call me.</div>
+              <div class="enq-meta"><span class="enq-tag">📞 +91 98250 XXXXX</span><span class="enq-tag">✉️ rkharadi@gmail.com</span><span class="enq-tag">Buy Enquiry</span><span class="ab new">New</span></div>
+            </div>
+            <div class="enq-acts"><button class="btn btn-solid btn-sm">Reply</button><button class="btn btn-outline btn-sm">Mark Read</button></div>
+          </div>
+          <div class="enq-card">
+            <div class="enq-av">PM</div>
+            <div class="enq-body">
+              <div class="enq-top"><div class="enq-name">Priya Mehta — HDFC Branch, Gandhinagar</div><div class="enq-time">Yesterday 3:15 PM</div></div>
+              <div class="enq-msg">We have 12 NPA accounts in Ahmedabad and Surat — residential and commercial mix. Would like to discuss assignment possibilities.</div>
+              <div class="enq-meta"><span class="enq-tag">📞 +91 79 XXXX XXXX</span><span class="enq-tag">Bank / FI</span><span class="ab vbank">Verified Bank</span></div>
+            </div>
+            <div class="enq-acts"><button class="btn btn-solid btn-sm">Reply</button><button class="btn btn-outline btn-sm">Mark Read</button></div>
+          </div>
+          <div class="enq-card">
+            <div class="enq-av">SA</div>
+            <div class="enq-body">
+              <div class="enq-top"><div class="enq-name">Sanjay Agarwal</div><div class="enq-time">26 Jun 11:00 AM</div></div>
+              <div class="enq-msg">Looking for commercial shops in Vastrapur, Bodakdev or SG Highway. Budget ₹25L–₹60L. Send latest DCB / SBI listings.</div>
+              <div class="enq-meta"><span class="enq-tag">📞 +91 94260 XXXXX</span><span class="enq-tag">Buy Enquiry</span></div>
+            </div>
+            <div class="enq-acts"><button class="btn btn-solid btn-sm">Reply</button><button class="aib">🗑️</button></div>
+          </div>
+        </div>
+
+        <!-- BUYERS -->
+        <div class="atab" id="tab-buyers">
+          <h3 style="font-size:14.5px;font-weight:700;color:var(--navy);margin-bottom:14px">Registered Buyers</h3>
+          <div class="atw">
+            <div class="ath"><h4>10,284 Users</h4><div class="ath-r"><input class="a-si" placeholder="Search buyers…"><button class="btn btn-outline btn-sm">Export</button></div></div>
+            <table class="at">
+              <thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>City</th><th>Interest</th><th>Joined</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Rajesh Kharadi</td><td>+91 98250 XXXX</td><td>rkharadi@g…</td><td>Ahmedabad</td><td>Residential</td><td>Today</td><td><span class="ab active">Active</span></td></tr>
+                <tr><td>Sanjay Agarwal</td><td>+91 94260 XXXX</td><td>sagarwal@g…</td><td>Surat</td><td>Commercial</td><td>26 Jun</td><td><span class="ab active">Active</span></td></tr>
+                <tr><td>Meena Patel</td><td>+91 97120 XXXX</td><td>meena.p@g…</td><td>Baroda</td><td>Plot / Land</td><td>24 Jun</td><td><span class="ab active">Active</span></td></tr>
+                <tr><td>Arvind Shah</td><td>+91 98982 XXXX</td><td>arv.shah@g…</td><td>Ahmedabad</td><td>Industrial</td><td>20 Jun</td><td><span class="ab inactive">Inactive</span></td></tr>
+                <tr><td>Dipika Joshi</td><td>+91 90990 XXXX</td><td>dipika.j@g…</td><td>Gandhinagar</td><td>Residential</td><td>15 Jun</td><td><span class="ab active">Active</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- BANKS -->
+        <div class="atab" id="tab-banks">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <h3 style="font-size:14.5px;font-weight:700;color:var(--navy)">Bank Partners</h3>
+            <button class="btn btn-solid btn-sm">+ Add Bank</button>
+          </div>
+          <div class="atw">
+            <table class="at">
+              <thead><tr><th>Bank Name</th><th>Contact Person</th><th>Email</th><th>Active Listings</th><th>Status</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr><td><strong>State Bank of India</strong></td><td>Mr. V. Sharma</td><td>sbi.ahm@sbi.co.in</td><td>412</td><td><span class="ab active">Active</span></td><td><button class="aib">✏️</button></td></tr>
+                <tr><td><strong>HDFC Bank</strong></td><td>Ms. P. Mehta</td><td>hdfc.npa@hdfcbank.com</td><td>328</td><td><span class="ab active">Active</span></td><td><button class="aib">✏️</button></td></tr>
+                <tr><td><strong>Bank of Baroda</strong></td><td>Mr. R. Patel</td><td>bob.ahm@bankofbaroda.in</td><td>215</td><td><span class="ab active">Active</span></td><td><button class="aib">✏️</button></td></tr>
+                <tr><td><strong>DCB Bank</strong></td><td>Ms. S. Iyer</td><td>dcb.npa@dcbbank.com</td><td>89</td><td><span class="ab active">Active</span></td><td><button class="aib">✏️</button></td></tr>
+                <tr><td><strong>ICICI Bank</strong></td><td>Mr. A. Kumar</td><td>icici.npa@icicibank.com</td><td>184</td><td><span class="ab active">Active</span></td><td><button class="aib">✏️</button></td></tr>
+                <tr><td><strong>Union Bank of India</strong></td><td>Mr. D. Rao</td><td>uoi.ahm@unionbankofindia.com</td><td>127</td><td><span class="ab active">Active</span></td><td><button class="aib">✏️</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- BLOG -->
+        <div class="atab" id="tab-blog">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <h3 style="font-size:14.5px;font-weight:700;color:var(--navy)">Blog / News</h3>
+            <button class="btn btn-solid btn-sm">+ New Post</button>
+          </div>
+          <div class="atw">
+            <table class="at">
+              <thead><tr><th>Title</th><th>Category</th><th>Author</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr><td>How to Buy Bank Auction Property in Gujarat — 2026 Guide</td><td>Guide</td><td>Neelesh Amin</td><td>10 Jun 2026</td><td><span class="ab pub">Published</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td>SARFAESI Act 2026 Amendments — What Buyers Need to Know</td><td>Legal</td><td>Neelesh Amin</td><td>02 Jun 2026</td><td><span class="ab pub">Published</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+                <tr><td>Top 5 Bank Auction Deals in Ahmedabad — June 2026</td><td>Market</td><td>Admin</td><td>—</td><td><span class="ab draft">Draft</span></td><td><button class="aib">✏️</button> <button class="aib">🗑️</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- SETTINGS -->
+        <div class="atab" id="tab-settings">
+          <h3 style="font-size:14.5px;font-weight:700;color:var(--navy);margin-bottom:14px">Site Settings</h3>
+          <div class="a-frm">
+            <div class="a-stitle">Company Details</div>
+            <div class="afg2">
+              <div class="afg"><label>Company Name</label><input type="text" value="Raahi Auction Services India Pvt. Ltd."></div>
+              <div class="afg"><label>CIN</label><input type="text" value="U70200GJ2018PTC101624"></div>
+              <div class="afg"><label>Primary Phone</label><input type="text" value="+91 84888 48874"></div>
+              <div class="afg"><label>WhatsApp Number</label><input type="text" value="+91 84888 48874"></div>
+              <div class="afg"><label>Primary Email</label><input type="email" value="raahiauc@gmail.com"></div>
+              <div class="afg"><label>Website URL</label><input type="text" value="raahiauction.com"></div>
+            </div>
+            <div class="afg"><label>Head Office Address</label><input type="text" value="A/701, 7th Floor, B.G. Tower, Outside Delhi Darwaja Gate, Madhupura, Ahmedabad – 380004, Gujarat"></div>
+            <div class="a-stitle">Logo &amp; Branding</div>
+            <div class="upload-zone"><span style="font-size:22px">🖼️</span><p>Upload new logo (PNG, SVG · Max 2MB)</p></div>
+            <div class="a-stitle">Social Media Links</div>
+            <div class="afg2">
+              <div class="afg"><label>Facebook</label><input type="url" placeholder="https://facebook.com/raahiauction"></div>
+              <div class="afg"><label>LinkedIn</label><input type="url" placeholder="https://linkedin.com/company/raahi-auction"></div>
+              <div class="afg"><label>Instagram</label><input type="url" placeholder="https://instagram.com/raahiauction"></div>
+              <div class="afg"><label>YouTube</label><input type="url" placeholder="https://youtube.com/@raahiauction"></div>
+            </div>
+            <div class="a-stitle">Announcement Bar</div>
+            <div class="afg"><label>Announcement Text</label><input type="text" value="New bank auction listings added daily — Browse latest Ahmedabad properties"></div>
+            <div class="a-acts"><button class="btn btn-solid">Save Settings</button></div>
+          </div>
+        </div>
+
+      </div><!-- /am-content -->
+    </div><!-- /am-body -->
+  </div><!-- /admin-modal -->
+</div><!-- /admin-overlay -->
+
 <script>
-  document.querySelectorAll('.filter-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-    });
+// Filter chips
+document.querySelectorAll(".fc").forEach(c=>{
+  c.addEventListener("click",()=>{
+    document.querySelectorAll(".fc").forEach(x=>x.classList.remove("active"));
+    c.classList.add("active");
   });
-  document.querySelectorAll('.page-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.page-btn').forEach(b => b.classList.remove('active'));
-      if (!btn.textContent.includes('→') && btn.textContent !== '…') btn.classList.add('active');
-    });
+});
+// Pagination
+document.querySelectorAll(".page-btn").forEach(b=>{
+  b.addEventListener("click",()=>{
+    if(b.classList.contains("wide"))return;
+    document.querySelectorAll(".page-btn").forEach(x=>x.classList.remove("active"));
+    b.classList.add("active");
   });
-  document.querySelectorAll('.prop-fav').forEach(fav => {
-    fav.addEventListener('click', e => {
-      e.stopPropagation();
-      fav.textContent = fav.textContent === '♡' ? '♥' : '♡';
-      fav.style.color = fav.textContent === '♥' ? '#C0272D' : '';
-    });
+});
+// Favourites
+document.querySelectorAll(".prop-fav").forEach(f=>{
+  f.addEventListener("click",e=>{
+    e.stopPropagation();
+    f.textContent=f.textContent==="♡"?"♥":"♡";
+    f.style.color=f.textContent==="♥"?"#C0272D":"";
   });
+});
+// Category click
+document.querySelectorAll(".cat-card").forEach(c=>{
+  c.addEventListener("click",()=>document.getElementById?document.querySelector("#listings").scrollIntoView({behavior:"smooth"}):null);
+});
+// Admin open/close
+function openAdmin(){
+  document.getElementById("adminOverlay").classList.add("open");
+  document.body.style.overflow="hidden";
+}
+function closeAdmin(){
+  document.getElementById("adminOverlay").classList.remove("open");
+  document.body.style.overflow="";
+}
+document.getElementById("adminOverlay").addEventListener("click",e=>{
+  if(e.target===document.getElementById("adminOverlay"))closeAdmin();
+});
+// Admin tab switching
+function showTab(id,el){
+  document.querySelectorAll(".atab").forEach(t=>t.classList.remove("active"));
+  document.querySelectorAll(".ani").forEach(n=>n.classList.remove("active"));
+  var tab=document.getElementById("tab-"+id);
+  if(tab)tab.classList.add("active");
+  if(el)el.classList.add("active");
+}
 </script>
 </body>
 </html>
